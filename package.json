@@ -25,7 +25,12 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "lint": "eslint --quiet src --ext .js,.jsx"
+    "lint": "eslint --quiet src --ext .js,.jsx",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "dev": "concurrently \"npm run server\" \"npm run start\"",
+    "server": "node server.js",
+    "json-server": "json-server -w api/db.json -p 3001"
   },
   "eslintConfig": {
     "extends": [
@@ -46,6 +51,10 @@
     ]
   },
   "devDependencies": {
+    "autoprefixer": "^10.4.8",
+    "concurrently": "^7.4.0",
+    "gh-pages": "^4.0.0",
+    "json-server": "^0.17.0",
     "postcss": "^8.4.16",
     "postcss-import": "^14.1.0",
     "postcss-nesting": "^10.1.10",

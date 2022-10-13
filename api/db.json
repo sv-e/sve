@@ -1,0 +1,124 @@
+{
+  "errors":[],
+  "works": [
+    {      
+      "id": 1,
+      "name": "zenweb",
+      "description": "",
+      "image_prev": null,
+      "image": null,
+      "tags":[
+        {"id" : 1, "name": "html"},
+        {"id" : 2, "name": "css"}
+      ],
+      "links":[
+        {"id" : 1, "name": "codepen", "url": null},
+        {"id" : 2, "name": "figma", "url": null},
+        {"id" : 3, "name": "stackblitz", "url": null},
+        {"id" : 4, "name": "web", "url": null}
+      ]
+    },
+    {      
+      "id": 2,
+      "name": "cat sity",
+      "description": "",
+      "image_prev": null,
+      "image": null,
+      "tags":[
+        {"id" : 1, "name": "html"},
+        {"id" : 2, "name": "css"}
+      ],
+      "links":[
+        {"id" : 1, "name": "codepen", "url": null},
+        {"id" : 2, "name": "figma", "url": null},
+        {"id" : 3, "name": "stackblitz", "url": null},
+        {"id" : 4, "name": "web", "url": null}
+      ]
+    },
+    {      
+      "id": 3,
+      "name": "auto",
+      "image_prev": null,
+      "description": "",
+      "image": null,
+      "tags":[
+        {"id" : 1, "name": "html"},
+        {"id" : 2, "name": "css"}
+      ],
+      "links":[
+        {"id" : 1, "name": "codepen", "url": null},
+        {"id" : 2, "name": "figma", "url": null},
+        {"id" : 3, "name": "stackblitz", "url": null},
+        {"id" : 4, "name": "web", "url": null}
+      ]
+    },
+    {      
+      "id": 4,
+      "name": "todo",
+      "image_prev": null,
+      "description": "",
+      "image": null,
+      "tags":[
+        {"id" : 1, "name": "html"},
+        {"id" : 2, "name": "css"}
+      ],
+      "links":[
+        {"id" : 1, "name": "codepen", "url": null},
+        {"id" : 2, "name": "figma", "url": null},
+        {"id" : 3, "name": "stackblitz", "url": null},
+        {"id" : 4, "name": "web", "url": null}
+      ]
+    },
+    {      
+      "id": 5,
+      "name": "3d css cube",
+      "description": "",
+      "image_prev": null,
+      "image": null,
+      "tags":[
+        {"id" : 1, "name": "html"},
+        {"id" : 2, "name": "css"}
+      ],
+      "links":[
+        {"id" : 1, "name": "codepen", "url": null},
+        {"id" : 2, "name": "figma", "url": null},
+        {"id" : 3, "name": "stackblitz", "url": null},
+        {"id" : 4, "name": "web", "url": null}
+      ]
+    },
+    {      
+      "id": 6,
+      "name": "Ficus",
+      "description": "",
+      "image_prev": null,
+      "image": null,
+      "tags":[
+        {"id" : 1, "name": "html"},
+        {"id" : 2, "name": "css"}
+      ],
+      "links":[
+        {"id" : 1, "name": "codepen", "url": null},
+        {"id" : 2, "name": "figma", "url": null},
+        {"id" : 3, "name": "stackblitz", "url": null},
+        {"id" : 4, "name": "web", "url": null}
+      ]
+    },
+    {      
+      "id": 7,
+      "name": "Start App",
+      "description": "",
+      "image_prev": null,
+      "image": null,
+      "tags":[
+        {"id" : 1, "name": "html"},
+        {"id" : 2, "name": "css"}
+      ],
+      "links":[
+        {"id" : 1, "name": "codepen", "url": null},
+        {"id" : 2, "name": "figma", "url": null},
+        {"id" : 3, "name": "stackblitz", "url": null},
+        {"id" : 4, "name": "web", "url": null}
+      ]
+    }
+  ]
+}
