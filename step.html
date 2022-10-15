@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+</head>
+<body>
+  <div class="container py-4">
+
+    <div class="mb-4">
+      <h5>1. Creat react project</h5>
+
+      <ul>
+        <li>npx create-react-app my-app</li>
+
+        <li>cd my-app</li>
+      </ul>
+    </div>
+
+    <div class="mb-4">
+      <h5>2. Clear project / creat direction</h5>
+
+       <ul>
+         <li>
+           assets, layouts, components, views, utils, hooks, redux, i18n 
+         </li>
+       </ul>
+    </div>
+
+    <div class="mb-4">
+      <h5>3. Install eslint</h5>
+      
+      <ul>
+        <li>
+           Add: .editorconfig, .eslintignore, .eslintrc.json
+         </li>
+      </ul>
+      
+    </div>
+    
+
+    <div class="mb-4">
+      <h5>4. Install Tailwind css</h5>
+      
+      <ul>
+        <li>npm i -D tailwindcss postcss autoprefixer</li>
+
+        <li>npx tailwindcss init -p</li>
+      </ul>
+
+      <h6>
+        +- 3.2 Install sass
+      </h6>
+
+      <ul>
+        <li>npm i node-sass</li>
+      </ul>
+    </div>
+
+
+    <div class="mb-4">
+      <h5>5. Routes</h5>
+
+      <ul>
+        <li>npm i react-router-dom - routes</li>
+      </ul>
+    </div>
+
+    <div class="mb-4">
+      <h5>6. Localization</h5>
+
+      <ul>
+        <li>npm i react-intl - language</li>
+      </ul>
+    </div>
+    
+
+    <div class="mb-4">
+      <h5>7. Redux</h5>
+
+      <ul>
+        <li>npm i react-redux</li>
+
+        <li>npm i @reduxjs/toolkit</li>
+
+        <li>npm i redux-persist</li>
+      </ul>
+    </div>
+
+    <div class="mb-4">
+      <h5>8. Form</h5>
+
+      <ul>
+        <li>npm i formik</li>
+
+        <li>npm i yup</li>
+      </ul>
+    </div>
+
+    <div class="mb-4">
+      <h5>9. Send email</h5>
+
+      <ul>
+        <li>npm i @emailjs/browser</li>
+
+        <li>Create account</li>
+      </ul>
+    </div>    
+
+
+    <div class="mb-4">
+      <h5>10. Server</h5>
+
+      <ul>
+        <li>npm i json-server</li>
+
+        <li>api/db.json</li>
+
+        <li>server.js</li>
+
+        <li>Procfile</li>
+      </ul>
+    </div>
+
+    <div class="mb-4">
+      <h5>11. Deploy</h5>
+
+      <ul>
+        <li>
+          heroku
+        </li>
+      </ul>
+    </div>
+
+
+    <!-- <p class="text-secondary fs-7">
+      -----------------
+
+          Deploy gh-page:
+
+
+          npm install gh-pages -D (только для разработки, не зайдет в прод)
+
+          package.json: 
+            "homepage": "https://lime7.github.io/folio",
+          ...
+            "scripts": { ...
+              "predeploy": "npm run build",
+              "deploy": "gh-pages -d build"
+          }
+
+          npm run predeploy
+          npm run deploy
+
+          Заменить:
+          // import { BrowserRouter } from "react-router-dom";
+
+          //         <BrowserRouter>
+          //           ...
+          //         </BrowserRouter>
+
+          на:
+
+          import { HashRouter } from "react-router-dom";
+
+          <HashRouter hashType="noslash"></<HashRouter >
+    </p> -->
+  </div>
+</body>
+</html>

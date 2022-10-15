@@ -1,28 +1,28 @@
 import { FormattedMessage } from "react-intl";
 import { useEffect, useState } from "react";
 import WorkList from "./WorkList";
-import { useFetchWorksMutation } from "../../redux/services/worksApi";
+import TagsList from "./TagsList";
+import { useFetchWorksMutation, useFetchTagsMutation } from "../../redux/services/worksApi";
 import Loader from "../../components/Loader";
 
 export default function Works(){
   const [works, setWorks] = useState([]);
+  const [tags, setTags] = useState([]);
   const [fetchWorks, { isLoading: isFetchingWorks }] = useFetchWorksMutation();
+  const [fetchTags, { isLoading: isFetchingTags }] = useFetchTagsMutation();
 
   useEffect(() => {
     const fetchData = async () => {
-      const { data, error } = await fetchWorks();
+      const promiseData = await Promise.all([fetchWorks(), fetchTags()]);
 
-      if(error) {
-        console.log(error);
-      } else {
-        setWorks(data);
-      }
+      setWorks(promiseData[0].data);
+      setTags(promiseData[1].data);    
     };
 
     fetchData();
   }, []);
 
-  const isFetching = isFetchingWorks;
+  const isFetching = isFetchingWorks || isFetchingTags;
 
   if (isFetching) {
     return (
@@ -60,9 +60,8 @@ export default function Works(){
           <FormattedMessage id="workDesc" />
         </p>
 
-        <p className="m-0">
-          tag list
-        </p>
+        <TagsList
+          tags={tags} />
       </div>
 		</>
 	);

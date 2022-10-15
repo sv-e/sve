@@ -4,6 +4,9 @@ import { useSelector, useDispatch } from "react-redux";
 import { HashRouter } from "react-router-dom";
 import { MainRoutes } from "./routes";
 
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
 import { IntlProvider } from "react-intl";
 import { LOCALES } from "./i18n/locales";
 import messages from "./i18n/messages/index";
@@ -45,6 +48,9 @@ export default function App() {
         messages={messages[locale]}
         locale={locale}
         defaultLocale={LOCALES.EN}>
+
+        <ToastContainer />
+
         <HashRouter>
           <MainLayout>
             <MainRoutes />

@@ -25,6 +25,7 @@ export default function WorkList({ works }){
           after:blur-2xl
           after:z-[-1]
           m-[2%]
+          glass
         ">
         <div
           className="

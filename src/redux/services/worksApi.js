@@ -34,6 +34,12 @@ export const worksApi = createApi({
         method: "DELETE"
       }),
       invalidatesTags: [{type: "Portfolio", id: "LIST"}]
+    }),
+    fetchTags: builder.mutation({
+      query: () => ({
+        url: WORKS_API.TAGS,
+        method: "GET"
+      })
     })
   })
 });
@@ -42,5 +48,6 @@ export const {
   useFetchWorksMutation,
   useFetchWorkMutation,
   useAddWorksMutation,
-  useDeleteWorksMutation
+  useDeleteWorksMutation,
+  useFetchTagsMutation
 } = worksApi;

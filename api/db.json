@@ -3,122 +3,293 @@
   "works": [
     {      
       "id": 1,
-      "name": "zenweb",
-      "description": "",
-      "image_prev": null,
-      "image": null,
+      "name": "Cat City",
+      "description": "Landing page. Pet hotel for cats.",
+      "image_prev": "1.webp",
+      "images": [
+        {"id": 1, "src": "1.webp"}, 
+        {"id": 2, "src": "2.webp"} 
+      ],
       "tags":[
-        {"id" : 1, "name": "html"},
-        {"id" : 2, "name": "css"}
+        {"id" : 1, "name": "Bootstrap 4"},
+        {"id" : 2, "name": "HTML5"},
+        {"id" : 3, "name": "CSS3"},
+        {"id" : 4, "name": "Figma"},
+        {"id" : 5, "name": "svg"},
+        {"id" : 6, "name": "JQuery"},
+        {"id" : 7, "name": "web design"}
       ],
       "links":[
-        {"id" : 1, "name": "codepen", "url": null},
-        {"id" : 2, "name": "figma", "url": null},
-        {"id" : 3, "name": "stackblitz", "url": null},
-        {"id" : 4, "name": "web", "url": null}
+        {"id" : 1, "name": "web", "url": "http://semen4enko.esy.es/cats/"},    
+        {"id" : 2, "name": "figma", "url": "https://www.figma.com/proto/czNPHAuVZRZk8lzd7FDXL2/Untitled?node-id=3%3A1&scaling=contain&page-id=0%3A1"}        
       ]
     },
     {      
       "id": 2,
-      "name": "cat sity",
-      "description": "",
-      "image_prev": null,
-      "image": null,
+      "name": "ZenWeb",
+      "description": "Landing page. Web agency.",
+      "image_prev": "1.webp",
+      "images": [
+        {"id": 1, "src": "1.webp"}, 
+        {"id": 2, "src": "2.webp"} 
+      ],
       "tags":[
-        {"id" : 1, "name": "html"},
-        {"id" : 2, "name": "css"}
+        {"id" : 1, "name": "Bootstrap 5"},
+        {"id" : 2, "name": "HTML5"},
+        {"id" : 3, "name": "CSS3"},
+        {"id" : 4, "name": "Figma"},
+        {"id" : 5, "name": "svg"},
+        {"id" : 6, "name": "Webpack 5"},
+        {"id" : 7, "name": "web design"}
       ],
       "links":[
-        {"id" : 1, "name": "codepen", "url": null},
-        {"id" : 2, "name": "figma", "url": null},
-        {"id" : 3, "name": "stackblitz", "url": null},
-        {"id" : 4, "name": "web", "url": null}
+        {"id" : 1, "name": "web", "url": "https://lime7.github.io/zenweb/"},        
+        {"id" : 2, "name": "figma", "url": "https://www.figma.com/proto/aW2eZG7IemSOhtC4itMIYKQY/WPtest?node-id=27%3A0&scaling=contain&page-id=0%3A1"}        
       ]
     },
     {      
       "id": 3,
-      "name": "auto",
-      "image_prev": null,
-      "description": "",
-      "image": null,
+      "name": "Car from USA",
+      "description": "Website",
+      "image_prev": "1.webp",
+      "images": [
+        {"id": 1, "src": "1.webp"}, 
+        {"id": 2, "src": "2.webp"},
+        {"id": 3, "src": "3.webp"}
+      ],
       "tags":[
-        {"id" : 1, "name": "html"},
-        {"id" : 2, "name": "css"}
+        {"id" : 1, "name": "Bootstrap 4"},
+        {"id" : 2, "name": "HTML5"},
+        {"id" : 3, "name": "CSS3"},
+        {"id" : 4, "name": "Figma"},
+        {"id" : 5, "name": "svg"},
+        {"id" : 6, "name": "JQuery"},
+        {"id" : 7, "name": "web design"}
       ],
       "links":[
-        {"id" : 1, "name": "codepen", "url": null},
-        {"id" : 2, "name": "figma", "url": null},
-        {"id" : 3, "name": "stackblitz", "url": null},
-        {"id" : 4, "name": "web", "url": null}
+        {"id" : 1, "name": "web", "url": "https://lime7.github.io/auto/"},        
+        {"id" : 2, "name": "figma", "url": "https://www.figma.com/proto/QYNKDsybkbsWj9nzRmK42C/Auto-from-USA?node-id=1%3A2&scaling=contain&page-id=0%3A1"}        
       ]
     },
     {      
       "id": 4,
-      "name": "todo",
-      "image_prev": null,
-      "description": "",
-      "image": null,
+      "name": "Todo list",
+      "description": "VUE 3 app",
+      "image_prev": "1.webp",
+      "images": [],
       "tags":[
-        {"id" : 1, "name": "html"},
-        {"id" : 2, "name": "css"}
+        {"id" : 1, "name": "VUE 3"},
+        {"id" : 2, "name": "HTML5"},
+        {"id" : 3, "name": "CSS3"},
+        {"id" : 4, "name": "Figma"},
+        {"id" : 5, "name": "svg"},
+        {"id" : 6, "name": "Bootstrap 4"},
+        {"id" : 7, "name": "web design"}
       ],
       "links":[
-        {"id" : 1, "name": "codepen", "url": null},
-        {"id" : 2, "name": "figma", "url": null},
-        {"id" : 3, "name": "stackblitz", "url": null},
-        {"id" : 4, "name": "web", "url": null}
+        {"id" : 1, "name": "web", "url": "https://lime7.github.io/todo/"},        
+        {"id" : 2, "name": "figma", "url": "https://www.figma.com/proto/Im0XLCuzg6DWvL1SapX4SR/Todo-List?node-id=140%3A128&scaling=contain&page-id=0%3A1"}        
       ]
     },
     {      
       "id": 5,
-      "name": "3d css cube",
-      "description": "",
-      "image_prev": null,
-      "image": null,
+      "name": "UI Card",
+      "description": "CodePen",
+      "image_prev": "1.webp",
+      "images": [],
       "tags":[
-        {"id" : 1, "name": "html"},
-        {"id" : 2, "name": "css"}
+        {"id" : 1, "name": "HTML5"},
+        {"id" : 2, "name": "CSS3"}
       ],
       "links":[
-        {"id" : 1, "name": "codepen", "url": null},
-        {"id" : 2, "name": "figma", "url": null},
-        {"id" : 3, "name": "stackblitz", "url": null},
-        {"id" : 4, "name": "web", "url": null}
+        {"id" : 5, "name": "codepen", "url": "https://codepen.io/semenchenko/full/XKaYVN/"}
       ]
     },
     {      
       "id": 6,
-      "name": "Ficus",
-      "description": "",
-      "image_prev": null,
-      "image": null,
+      "name": "3d Cube",
+      "description": "CodePen",
+      "image_prev": "1.webp",
+      "images": [],
       "tags":[
-        {"id" : 1, "name": "html"},
-        {"id" : 2, "name": "css"}
+        {"id" : 1, "name": "HTML5"},
+        {"id" : 2, "name": "CSS3"}
       ],
       "links":[
-        {"id" : 1, "name": "codepen", "url": null},
-        {"id" : 2, "name": "figma", "url": null},
-        {"id" : 3, "name": "stackblitz", "url": null},
-        {"id" : 4, "name": "web", "url": null}
+        {"id" : 5, "name": "codepen", "url": "https://codepen.io/semenchenko/full/adxboN/"}
       ]
     },
     {      
       "id": 7,
-      "name": "Start App",
-      "description": "",
-      "image_prev": null,
-      "image": null,
+      "name": "Ural Oxigen",
+      "description": "Website",
+      "image_prev": "1.webp",
+      "images": [
+        {"id": 1, "src": "1.webp"}, 
+        {"id": 2, "src": "2.webp"}
+      ],
       "tags":[
-        {"id" : 1, "name": "html"},
-        {"id" : 2, "name": "css"}
+        {"id" : 1, "name": "Bootstrap 4"},
+        {"id" : 2, "name": "HTML5"},
+        {"id" : 3, "name": "CSS3"},
+        {"id" : 4, "name": "JQuery"}
       ],
       "links":[
-        {"id" : 1, "name": "codepen", "url": null},
-        {"id" : 2, "name": "figma", "url": null},
-        {"id" : 3, "name": "stackblitz", "url": null},
-        {"id" : 4, "name": "web", "url": null}
+        {"id" : 1, "name": "web", "url": "http://semen4enko.esy.es/UralOxigen/"}
+      ]
+    },
+    {      
+      "id": 8,
+      "name": "Akva",
+      "description": "Website",
+      "image_prev": "1.webp",
+      "images": [
+        {"id": 1, "src": "1.webp"}, 
+        {"id": 2, "src": "2.webp"}
+      ],
+      "tags":[
+        {"id" : 1, "name": "Bootstrap 4"},
+        {"id" : 2, "name": "HTML5"},
+        {"id" : 3, "name": "CSS3"},
+        {"id" : 4, "name": "JQuery"}
+      ],
+      "links":[
+        {"id" : 1, "name": "web", "url": "http://semen4enko.esy.es/akva/"}
+      ]
+    },
+    {      
+      "id": 9,
+      "name": "StudyCube",
+      "description": "Website",
+      "image_prev": "1.webp",
+      "images": [
+        {"id": 1, "src": "1.webp"}, 
+        {"id": 2, "src": "2.webp"}
+      ],
+      "tags":[
+        {"id" : 1, "name": "Bootstrap 4"},
+        {"id" : 2, "name": "HTML5"},
+        {"id" : 3, "name": "CSS3"},
+        {"id" : 4, "name": "JQuery"}
+      ],
+      "links":[
+        {"id" : 1, "name": "web", "url": "http://semen4enko.esy.es/studycube/"}
+      ]
+    },
+    {      
+      "id": 10,
+      "name": "StartApp",
+      "description": "Landing page.",
+      "image_prev": "1.webp",
+      "images": [
+        {"id": 1, "src": "1.webp"}
+      ],
+      "tags":[
+        {"id" : 1, "name": "Tailwind CSS"},
+        {"id" : 2, "name": "HTML5"},
+        {"id" : 3, "name": "CSS3"},
+        {"id" : 4, "name": "Webpack 4"},
+        {"id" : 7, "name": "web design"}
+      ],
+      "links":[
+        {"id" : 1, "name": "web", "url": "https://lime7.github.io/tws/"}
+      ]
+    },
+    {      
+      "id": 11,
+      "name": "Energy",
+      "description": "Website",
+      "image_prev": "1.webp",
+      "images": [
+        {"id": 1, "src": "1.webp"}, 
+        {"id": 2, "src": "2.webp"}
+      ],
+      "tags":[
+        {"id" : 1, "name": "Bootstrap 4"},
+        {"id" : 2, "name": "HTML5"},
+        {"id" : 3, "name": "CSS3"},
+        {"id" : 4, "name": "JQuery"}
+      ],
+      "links":[
+        {"id" : 1, "name": "web", "url": "http://semen4enko.esy.es/energy/"}
+      ]
+    },
+    {      
+      "id": 12,
+      "name": "Ficus",
+      "description": "Landing page design.",
+      "image_prev": "1.webp",
+      "images": [
+        {"id": 1, "src": "1.webp"}
+      ],
+      "tags":[
+        {"id" : 1, "name": "Figma"},
+        {"id" : 2, "name": "svg"},
+        {"id" : 3, "name": "web design"}
+      ],
+      "links":[        
+        {"id" : 2, "name": "figma", "url": "https://www.figma.com/proto/n7MGyUHyv4CCpuFqeXsxIC/Fucus-design?node-id=1%3A2&scaling=contain&page-id=0%3A1&starting-point-node-id=1%3A2"}
+      ]
+    },
+    {      
+      "id": 13,
+      "name": "Trans-si",
+      "description": "Landing page",
+      "image_prev": "1.webp",
+      "images": [
+        {"id": 1, "src": "1.webp"}, 
+        {"id": 2, "src": "2.webp"},
+        {"id": 3, "src": "3.webp"}
+      ],
+      "tags":[
+        {"id" : 1, "name": "Bootstrap 4"},
+        {"id" : 2, "name": "HTML5"},
+        {"id" : 3, "name": "CSS3"},
+        {"id" : 4, "name": "JQuery"}
+      ],
+      "links":[
+        {"id" : 1, "name": "web", "url": "http://semen4enko.esy.es/trans-si/"}
+      ]
+    },
+    {      
+      "id": 14,
+      "name": "Heliport",
+      "description": "Website",
+      "image_prev": "1.webp",
+      "images": [
+        {"id": 1, "src": "1.webp"}, 
+        {"id": 2, "src": "2.webp"}
+      ],
+      "tags":[
+        {"id" : 1, "name": "Bootstrap 4"},
+        {"id" : 2, "name": "HTML5"},
+        {"id" : 3, "name": "CSS3"},
+        {"id" : 4, "name": "svg"},
+        {"id" : 5, "name": "JQuery"}
+      ],
+      "links":[
+        {"id" : 1, "name": "web", "url": "http://semen4enko.esy.es/heliport/"}
       ]
     }
+  ],
+  "tags": [
+    {"id": 1, "name": "HTML5"},
+    {"id": 2, "name": "CSS3"},
+    {"id": 3, "name": "Bootstrap"},
+    {"id": 5, "name": "Webpack"},
+    {"id": 7, "name": "Tailwind CSS"},
+    {"id": 8, "name": "svg"},
+    {"id": 9, "name": "VUE"},
+    {"id": 10, "name": "JQuery"},
+    {"id": 11, "name": "js"},
+    {"id": 12, "name": "Figma"},
+    {"id": 13, "name": "Photoshop"},
+    {"id": 14, "name": "Illustrator"},
+    {"id": 16, "name": "SCSS"},
+    {"id": 17, "name": "Git"},
+    {"id": 18, "name": "Gulp"},
+    {"id": 19, "name": "Kanban"},
+    {"id": 20, "name": "React"},
+    {"id": 21, "name": "WP"}
   ]
 }

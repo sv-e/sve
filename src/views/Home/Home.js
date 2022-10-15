@@ -31,7 +31,7 @@ export default function Home(){
 
       <div className="
         text-xs
-        leading-5        
+        leading-5
         sm:text-sm
         lg:leading-7
         text-sev-gray-300

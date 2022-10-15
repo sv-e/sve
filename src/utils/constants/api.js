@@ -6,4 +6,7 @@ export const APP_ROUTE = {
   CONTACT: "/contact"
 };
 
-export const WORKS_API = { WORKS: "/works" };
+export const WORKS_API = {
+  WORKS: "/works",
+  TAGS: "/tags"
+};
