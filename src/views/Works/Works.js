@@ -9,7 +9,7 @@ export default function Works(){
   const [works, setWorks] = useState([]);
   const [tags, setTags] = useState([]);
   const [fetchWorks, { isLoading: isFetchingWorks }] = useFetchWorksMutation();
-  const [fetchTags, { isLoading: isFetchingTags }] = useFetchTagsMutation();
+  const [fetchTags, { isLoading: isFetchingTags }] = useFetchTagsMutation();  
 
   useEffect(() => {
     const fetchData = async () => {

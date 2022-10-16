@@ -3,12 +3,13 @@
   "works": [
     {      
       "id": 1,
+      "size": 1,
       "name": "Cat City",
       "description": "Landing page. Pet hotel for cats.",
-      "image_prev": "1.webp",
+      "image_prev": "1",
       "images": [
-        {"id": 1, "src": "1.webp"}, 
-        {"id": 2, "src": "2.webp"} 
+        {"id": 1, "src": "1"}, 
+        {"id": 2, "src": "2"} 
       ],
       "tags":[
         {"id" : 1, "name": "Bootstrap 4"},
@@ -22,16 +23,18 @@
       "links":[
         {"id" : 1, "name": "web", "url": "http://semen4enko.esy.es/cats/"},    
         {"id" : 2, "name": "figma", "url": "https://www.figma.com/proto/czNPHAuVZRZk8lzd7FDXL2/Untitled?node-id=3%3A1&scaling=contain&page-id=0%3A1"}        
-      ]
+      ],
+      "status": true
     },
     {      
       "id": 2,
+      "size": 1,
       "name": "ZenWeb",
       "description": "Landing page. Web agency.",
-      "image_prev": "1.webp",
+      "image_prev": "1",
       "images": [
-        {"id": 1, "src": "1.webp"}, 
-        {"id": 2, "src": "2.webp"} 
+        {"id": 1, "src": "1"}, 
+        {"id": 2, "src": "2"} 
       ],
       "tags":[
         {"id" : 1, "name": "Bootstrap 5"},
@@ -45,17 +48,19 @@
       "links":[
         {"id" : 1, "name": "web", "url": "https://lime7.github.io/zenweb/"},        
         {"id" : 2, "name": "figma", "url": "https://www.figma.com/proto/aW2eZG7IemSOhtC4itMIYKQY/WPtest?node-id=27%3A0&scaling=contain&page-id=0%3A1"}        
-      ]
+      ],
+      "status": true
     },
     {      
       "id": 3,
+      "size": 1,
       "name": "Car from USA",
       "description": "Website",
-      "image_prev": "1.webp",
+      "image_prev": "1",
       "images": [
-        {"id": 1, "src": "1.webp"}, 
-        {"id": 2, "src": "2.webp"},
-        {"id": 3, "src": "3.webp"}
+        {"id": 1, "src": "1"}, 
+        {"id": 2, "src": "2"},
+        {"id": 3, "src": "3"}
       ],
       "tags":[
         {"id" : 1, "name": "Bootstrap 4"},
@@ -69,13 +74,15 @@
       "links":[
         {"id" : 1, "name": "web", "url": "https://lime7.github.io/auto/"},        
         {"id" : 2, "name": "figma", "url": "https://www.figma.com/proto/QYNKDsybkbsWj9nzRmK42C/Auto-from-USA?node-id=1%3A2&scaling=contain&page-id=0%3A1"}        
-      ]
+      ],
+      "status": true
     },
     {      
       "id": 4,
+      "size": 1,
       "name": "Todo list",
       "description": "VUE 3 app",
-      "image_prev": "1.webp",
+      "image_prev": "1",
       "images": [],
       "tags":[
         {"id" : 1, "name": "VUE 3"},
@@ -89,13 +96,15 @@
       "links":[
         {"id" : 1, "name": "web", "url": "https://lime7.github.io/todo/"},        
         {"id" : 2, "name": "figma", "url": "https://www.figma.com/proto/Im0XLCuzg6DWvL1SapX4SR/Todo-List?node-id=140%3A128&scaling=contain&page-id=0%3A1"}        
-      ]
+      ],
+      "status": true
     },
     {      
       "id": 5,
+      "size": 1,
       "name": "UI Card",
       "description": "CodePen",
-      "image_prev": "1.webp",
+      "image_prev": "1",
       "images": [],
       "tags":[
         {"id" : 1, "name": "HTML5"},
@@ -103,13 +112,15 @@
       ],
       "links":[
         {"id" : 5, "name": "codepen", "url": "https://codepen.io/semenchenko/full/XKaYVN/"}
-      ]
+      ],
+      "status": true
     },
     {      
       "id": 6,
+      "size": 2,
       "name": "3d Cube",
       "description": "CodePen",
-      "image_prev": "1.webp",
+      "image_prev": "1",
       "images": [],
       "tags":[
         {"id" : 1, "name": "HTML5"},
@@ -117,16 +128,18 @@
       ],
       "links":[
         {"id" : 5, "name": "codepen", "url": "https://codepen.io/semenchenko/full/adxboN/"}
-      ]
+      ],
+      "status": true
     },
     {      
       "id": 7,
+      "size": 1,
       "name": "Ural Oxigen",
       "description": "Website",
-      "image_prev": "1.webp",
+      "image_prev": "1",
       "images": [
-        {"id": 1, "src": "1.webp"}, 
-        {"id": 2, "src": "2.webp"}
+        {"id": 1, "src": "1"}, 
+        {"id": 2, "src": "2"}
       ],
       "tags":[
         {"id" : 1, "name": "Bootstrap 4"},
@@ -136,16 +149,18 @@
       ],
       "links":[
         {"id" : 1, "name": "web", "url": "http://semen4enko.esy.es/UralOxigen/"}
-      ]
+      ],
+      "status": false
     },
     {      
       "id": 8,
+      "size": 1,
       "name": "Akva",
       "description": "Website",
-      "image_prev": "1.webp",
+      "image_prev": "1",
       "images": [
-        {"id": 1, "src": "1.webp"}, 
-        {"id": 2, "src": "2.webp"}
+        {"id": 1, "src": "1"}, 
+        {"id": 2, "src": "2"}
       ],
       "tags":[
         {"id" : 1, "name": "Bootstrap 4"},
@@ -155,16 +170,18 @@
       ],
       "links":[
         {"id" : 1, "name": "web", "url": "http://semen4enko.esy.es/akva/"}
-      ]
+      ],
+      "status": false
     },
     {      
       "id": 9,
+      "size": 1,
       "name": "StudyCube",
       "description": "Website",
-      "image_prev": "1.webp",
+      "image_prev": "1",
       "images": [
-        {"id": 1, "src": "1.webp"}, 
-        {"id": 2, "src": "2.webp"}
+        {"id": 1, "src": "1"}, 
+        {"id": 2, "src": "2"}
       ],
       "tags":[
         {"id" : 1, "name": "Bootstrap 4"},
@@ -174,15 +191,17 @@
       ],
       "links":[
         {"id" : 1, "name": "web", "url": "http://semen4enko.esy.es/studycube/"}
-      ]
+      ],
+      "status": false
     },
     {      
       "id": 10,
+      "size": 1,
       "name": "StartApp",
       "description": "Landing page.",
-      "image_prev": "1.webp",
+      "image_prev": "1",
       "images": [
-        {"id": 1, "src": "1.webp"}
+        {"id": 1, "src": "1"}
       ],
       "tags":[
         {"id" : 1, "name": "Tailwind CSS"},
@@ -193,16 +212,18 @@
       ],
       "links":[
         {"id" : 1, "name": "web", "url": "https://lime7.github.io/tws/"}
-      ]
+      ],
+      "status": true
     },
     {      
       "id": 11,
+      "size": 1,
       "name": "Energy",
       "description": "Website",
-      "image_prev": "1.webp",
+      "image_prev": "1",
       "images": [
-        {"id": 1, "src": "1.webp"}, 
-        {"id": 2, "src": "2.webp"}
+        {"id": 1, "src": "1"}, 
+        {"id": 2, "src": "2"}
       ],
       "tags":[
         {"id" : 1, "name": "Bootstrap 4"},
@@ -212,15 +233,17 @@
       ],
       "links":[
         {"id" : 1, "name": "web", "url": "http://semen4enko.esy.es/energy/"}
-      ]
+      ],
+      "status": false
     },
     {      
       "id": 12,
+      "size": 1,
       "name": "Ficus",
       "description": "Landing page design.",
-      "image_prev": "1.webp",
+      "image_prev": "1",
       "images": [
-        {"id": 1, "src": "1.webp"}
+        {"id": 1, "src": "1"}
       ],
       "tags":[
         {"id" : 1, "name": "Figma"},
@@ -229,17 +252,19 @@
       ],
       "links":[        
         {"id" : 2, "name": "figma", "url": "https://www.figma.com/proto/n7MGyUHyv4CCpuFqeXsxIC/Fucus-design?node-id=1%3A2&scaling=contain&page-id=0%3A1&starting-point-node-id=1%3A2"}
-      ]
+      ],
+      "status": true
     },
     {      
       "id": 13,
+      "size": 1,
       "name": "Trans-si",
       "description": "Landing page",
-      "image_prev": "1.webp",
+      "image_prev": "1",
       "images": [
-        {"id": 1, "src": "1.webp"}, 
-        {"id": 2, "src": "2.webp"},
-        {"id": 3, "src": "3.webp"}
+        {"id": 1, "src": "1"}, 
+        {"id": 2, "src": "2"},
+        {"id": 3, "src": "3"}
       ],
       "tags":[
         {"id" : 1, "name": "Bootstrap 4"},
@@ -249,16 +274,18 @@
       ],
       "links":[
         {"id" : 1, "name": "web", "url": "http://semen4enko.esy.es/trans-si/"}
-      ]
+      ],
+      "status": false
     },
     {      
       "id": 14,
+      "size": 1,
       "name": "Heliport",
       "description": "Website",
-      "image_prev": "1.webp",
+      "image_prev": "1",
       "images": [
-        {"id": 1, "src": "1.webp"}, 
-        {"id": 2, "src": "2.webp"}
+        {"id": 1, "src": "1"}, 
+        {"id": 2, "src": "2"}
       ],
       "tags":[
         {"id" : 1, "name": "Bootstrap 4"},
@@ -269,7 +296,8 @@
       ],
       "links":[
         {"id" : 1, "name": "web", "url": "http://semen4enko.esy.es/heliport/"}
-      ]
+      ],
+      "status": false
     }
   ],
   "tags": [

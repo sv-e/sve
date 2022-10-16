@@ -31,9 +31,7 @@ export default function WorkList({ works }){
           className="
             grid
             grid-cols-2
-            grid-rows-4
             lg:grid-cols-4
-            lg:grid-rows-2
             gap-4
             h-full
           ">
