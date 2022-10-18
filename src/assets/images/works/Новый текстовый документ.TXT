@@ -1,0 +1,159 @@
+id: 1
+title: cat city
+project: Landing page. Pet hotel for cats
+Technologies: figma, svg, CSS3, HTML5, Bootstrap 4, jQuery
+link: http://semen4enko.esy.es/cats/
+design: https://www.figma.com/proto/czNPHAuVZRZk8lzd7FDXL2/Untitled?node-id=3%3A1&scaling=contain&page-id=0%3A1
+images: 1.webp, 2.webp
+
+id: 2
+title: ZENWEB
+project: Landing page.
+Technologies: CSS3, HTML5, Bootstrap 4, jQuery, svg, svg smil animation.
+link: https://lime7.github.io/zenweb/
+design: https://www.figma.com/proto/aW2eZG7IemSOhtC4itMIYKQY/WPtest?node-id=27%3A0&scaling=contain&page-id=0%3A1
+images: 1.webp, 2.webp
+
+id: 3
+title: CAR FROM USA
+project: Website
+Technologies: figma, svg, CSS3, HTML5, Bootstrap 4, jQuery
+link: https://lime7.github.io/auto/
+design: https://www.figma.com/proto/QYNKDsybkbsWj9nzRmK42C/Auto-from-USA?node-id=1%3A2&scaling=contain&page-id=0%3A1
+images: 1.webp, 2.webp, 3.webp
+
+id: 4
+title: todo
+project: vue test
+Technologies: vue, figma, svg
+link: https://lime7.github.io/todo/
+design: https://www.figma.com/proto/Im0XLCuzg6DWvL1SapX4SR/Todo-List?node-id=140%3A128&scaling=contain&page-id=0%3A1
+images: 
+
+
+id: 5
+title: ui card
+project: codepen
+Technologies: css3, html5
+link: https://codepen.io/semenchenko/full/XKaYVN/
+design:
+images: 
+
+id: 6
+title: 3d cube
+project: css3 animation
+Technologies: css3, html5
+link: https://codepen.io/semenchenko/full/adxboN/
+images: 
+
+
+id: 7
+title: UralOxigen
+project: Website
+Technologies: CSS3, HTML5, Bootstrap 4, jQuery
+link: http://semen4enko.esy.es/UralOxigen/
+design:
+images: 
+
+
+id: 8
+title: Akva
+project: Website
+Technologies: CSS3, HTML5, Bootstrap 4, jQuery
+link: http://semen4enko.esy.es/akva/
+design:
+images: 
+
+id: 9
+title: studycube
+project: Website
+Technologies: CSS3, HTML5, Bootstrap 4, jQuery
+link: http://semen4enko.esy.es/studycube/
+design:
+images: 
+
+
+id: 10
+title: StartApp
+project: Landing page.
+Technologies: webpack4, tailwind css
+link: https://lime7.github.io/tws/
+design:
+images: 1.webp
+
+id: 11
+title: energy
+project: Website
+Technologies: CSS3, HTML5, Bootstrap 4, jQuery
+link: http://semen4enko.esy.es/energy/
+design:
+images: 1.webp, 2.webp
+
+id: 12
+title: ficus
+project: Design landing page.
+Technologies: figma, svg
+link: 
+design: https://www.figma.com/proto/n7MGyUHyv4CCpuFqeXsxIC/Fucus-design?node-id=1%3A2&scaling=contain&page-id=0%3A1&starting-point-node-id=1%3A2
+images: 
+
+id: 13
+title: trans-si
+project: Landing page.
+Technologies: CSS3, HTML5, jQuery, fullpage
+link: http://semen4enko.esy.es/trans-si/
+design:
+images: 1.webp, 2.webp, 3.webp
+
+
+id: 14
+title: heliports
+project: Website
+Technologies: svg, CSS3, HTML5, Bootstrap 4, jQuery
+link: http://semen4enko.esy.es/heliport/
+design:
+images: 1.webp, 2.webp
+
+
+
+
+Reviews:
+
+
+Figma to a responsive html
+Rating is 5 out of 5.
+ 5.00 Feb 2, 2021 - Feb 4, 2021 
+"I had an excellent experience with Helen and I would highly recommend her as HTML/CSS developer.
+She has great communication skills and work had been done quick and with high quality.
+All my suggestion were taken into account.
+I would definitely like to work with Helen again."
+
+
+Adopting responsive HTML for email clients
+Rating is 5 out of 5.
+ 5.00 Jul 25, 2018 
+"Helen provided great quality results in short period of time!"
+
+
+
+Заказ: Сверстать лендинг (Разработка / Фронтенд)
+ 5.00 Jul 25, 2020
+Отличный исполнитель!
+
+Заказ: Сверстать одностраничник (Разработка / Фронтенд)
+ 5.00 Jul 25, 2020 
+
+
+
+ HTML4/5, CSS3
+ Bootstrap 3/4/5/vue/react
+ Validation & Responsive
+ SASS / SCSS
+ Figma / Photoshop / Illustrator / svg
+ jQuery / JS / Plugins
+ ReactJS, VueJS (base)
+ Git / GitHub / GitLab
+ Gulp / Webpack
+ Design / Redesign
+ Kanban
+ JSON / API

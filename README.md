@@ -68,3 +68,90 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+
+-----------------------------------
+
+1. Creat react project
+
+`npx create-react-app my-app`
+
+`cd my-app`
+
+2. Clear project / creat direction
+
+assets, layouts, components, views, utils, hooks, redux, i18n 
+
+3. Install eslint
+
+`"@babel/core": "^7.19.0",
+    "@babel/eslint-parser": "^7.18.9",
+    "@sentry/webpack-plugin": "^1.19.0",
+    "eslint": "^8.23.0",
+    "eslint-config-react-app": "^7.0.1",
+    "eslint-config-standard": "^17.0.0",
+    "eslint-plugin-flowtype": "^8.0.3",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-jsx-a11y": "^6.6.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^6.0.0",
+    "eslint-plugin-react": "7.31.1",
+    "eslint-plugin-react-hooks": "^4.6.0"`
+
+4. Install Tailwind css
+
+`npm install -D tailwindcss postcss autoprefixer`
+
+`npx tailwindcss init -p`
+
+4.1 Install sass
+
+`npm i node-sass`
+
+
+5. Routes
+
+`npm i react-router-dom`
+
+6. Localization
+
+`npm i react-intl`
+
+
+7. Redux
+
+`npm i react-redux`
+
+`npm i @reduxjs/toolkit`
+
+`npm i redux-persist`
+
+
+8. Form
+
+`npm i formik`
+
+`npm i yup`
+
+
+9. Send email
+
+`npm i @emailjs/browser`
+
+Create account
+
+
+10. Server
+
+`npm i json-server`
+
++ api/db.json
+
++ server.js
+
++ Procfile
+
+11. Deploy
+
+heroku

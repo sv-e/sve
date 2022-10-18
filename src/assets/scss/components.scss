@@ -1,0 +1,189 @@
+// Neo background animation
+@mixin content {
+  content: '';
+  position: absolute;
+  pointer-events: none;
+}
+
+@mixin center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  transform: translate(-50%, -50%) scale(1);
+  border-radius: $r-neo;
+}
+
+.neo {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  pointer-events: none;
+  
+  &-center {
+    display: block;
+    width: $size-neo;
+    height: $size-neo;
+    border-radius: $r-neo;
+    position: relative;
+    
+    background: $center-bg;    
+    box-shadow: $center-shadow;    
+    
+    &:before {
+      @include content;
+      z-index: 2;
+      
+      top: -100%;
+      left: -100%;
+      bottom: -100%;
+      right: -100%;
+      
+      backdrop-filter: blur(7px);
+    }
+    
+    &:after {
+      @include content;
+      z-index: 1;
+      
+      left: 10%;
+      top: 10%;
+      right: 10%;
+      bottom: 10%;
+      
+      border-radius: $r-neo;
+      filter: blur(12px);
+      
+      background: $center-bg-after;
+      
+      opacity: 0;
+      
+      animation: NeoInnerShadowAnimation $dur-neo / 2 ease infinite;
+    }
+  }
+  
+  &-waves {    
+    @include center;
+    
+    opacity: 0;
+    
+    animation: WaveMainAnimation $dur-neo * 2.4 linear infinite;
+    
+    &:before {
+      @include center;
+      content: '';      
+      box-shadow:$waves-shadow;
+      
+      animation: WaveBeforeAnimation ($dur-neo + 0.1s) $delay-neo linear infinite;
+    }
+    
+    &:after {
+      @include center;
+      content: '';
+      box-shadow:$waves-shadow;
+      
+      animation: WaveBeforeAnimation ($delay-neo - $dur-neo) (($dur-neo + 0.1s) / 2) linear infinite; 
+    }
+  }
+}
+
+
+@keyframes NeoInnerShadowAnimation {
+  0% { opacity: 0; }
+  50% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+@keyframes WaveMainAnimation {
+  30% { opacity: 1; }
+}
+
+@keyframes WaveBeforeAnimation {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(1);
+  }
+  30% { opacity: 1; }
+  100% {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale($scale-neo);
+  }
+}
+
+
+// Button Berry
+
+@mixin berry {
+  color: $berry-color;
+  background: $berry-bg;
+  background-size: 600%;
+  animation: BerryAnimation 17s linear infinite;
+}
+
+.berry {
+  @include berry;
+  // box-shadow: $berry-shadow;  
+
+  @apply transition duration-200 ease-linear select-none;  
+
+  &:before {
+    @include berry;
+    margin-top: 7%;
+    z-index: -1;
+    filter: blur(17px);
+    opacity: 0.7;
+    border-radius: inherit;
+    @apply transition duration-200 ease-linear select-none;
+  }
+
+  &:hover:before {
+    opacity: 0.1;
+  }
+}
+
+@keyframes BerryAnimation {
+   0% {
+    background-position: 0% 50%;
+   }     
+   50% {
+    background-position: 100% 50%;
+   }     
+   100% {
+    background-position: 0% 50%;
+   }     
+}
+
+.card {
+  background: $card-bg;
+  filter: $card-filter;
+}
+
+.btn {
+  &-dark {
+    color: $btn-dark-color;
+    background: $btn-dark-bg;
+    box-shadow: $btn-dark-shadow;
+
+    &:hover {
+      box-shadow: $btn-dark-shadow-hover;
+    }
+  }
+
+  &-berry {
+    color: $btn-berry-color;
+    background: $btn-berry-bg;
+    box-shadow: $btn-berry-shadow;
+
+    &:hover {
+      box-shadow: $btn-berry-shadow-hover;
+    }
+  }
+}

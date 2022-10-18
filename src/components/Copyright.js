@@ -1,0 +1,35 @@
+import { FormattedMessage } from "react-intl";
+
+export default function Copyright(){
+  return (
+    <span
+      className="
+        block
+        whitespace-nowrap
+        text-sev-gray-300
+        dark:text-sev-gray-100
+        uppercase
+        tracking-[2px]
+        sm:fixed
+        sm:rotate-90
+        sm:translate-y-full
+        sm:origin-top-right
+        sm:w-[100vh]
+        sm:right-0
+        sm:bottom-0
+        text-center
+        sm:mr-4
+        text-xs
+        lg:text-sm
+        xl:mr-12.7
+        xxl:text-base
+        mb-4
+        sm:mb-0
+        select-none
+        hlg:text-xs
+        hlg:leading-5
+      ">
+      <FormattedMessage id="copyright"  values={{ tag: new Date().getFullYear() }} />
+    </span>
+  );
+}

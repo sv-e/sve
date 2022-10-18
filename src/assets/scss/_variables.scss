@@ -1,0 +1,199 @@
+@function toRem($value) {
+  $remValue: ($value / 16) + rem; 
+  @return $remValue;
+}
+
+
+
+$neo-black: "0, 0, 0";         // $000
+$neo-dark: "133, 143, 167";    // #858fa7
+$neo-light: "255, 255, 255";   // $fff
+
+$size-neo: 170px;
+$r-neo: 50%;
+$scale-neo: 3;
+
+$dur-neo: 3s;
+$delay-neo: 0.1s;
+
+
+$berry-light: "255, 255, 255";   // $fff
+$berry-dark: "14, 8, 39";        // #0E0827
+$berry-gray: "127, 127, 127";    // #7F7F7F
+
+
+$black: "0, 0, 0";             // $000
+$white: "255, 255, 255";       // #fff
+
+$dark: "14, 8, 39";            // #0E0827
+$light: "242, 243, 247";       // #F2F3F7
+                               
+
+$gray-100: "197, 197, 197";    // C5C5C5
+$gray-200: "92, 92, 92";       // 5C5C5C
+$gray-300: "127, 127, 127";    // #7F7F7F
+
+
+$purple: "255, 58, 93";        // #FF3A5D
+$orange: "255, 90, 0";         // #FF5A00
+
+
+:root {
+  --color-neo-dark:        #{$neo-dark};
+  --color-neo-light:       #{$neo-light};
+  --color-neo-black:       #{$neo-black};
+
+
+  --color-berry-light:     #{$berry-light};
+  --color-berry-dark:      #{$berry-dark};
+  --color-berry-gray:      #{$berry-gray};
+
+
+  --color-dark:            #{$dark};
+  --color-light:           #{$light};
+  --color-white:           #{$white};
+
+  --color-gray-100:        #{$gray-100};
+  --color-gray-200:        #{$gray-200};
+  --color-gray-300:        #{$gray-300};
+
+  --color-purple:          #{$purple};
+  --color-orange:          #{$orange};
+  --color-black:           #{$black};
+}
+
+:root.dark {    
+  --color-neo-dark:        #{$neo-light};
+  --color-neo-light:       #{$neo-black};
+  --color-neo-black:       #{$neo-black};
+
+  --color-light:           #{$dark};
+  --color-dark:            #{$light};
+
+  --color-purple:          #{$purple};
+  --color-orange:          #{$orange};
+  --color-black:           #{$white};
+}
+
+// @layer base {
+//   :root {
+//     --color-dark-neo: #{$dark};
+//     --color-light-neo: #{$light};
+//   }
+
+//   :root.dark {    
+//     --color-dark-neo: #{$light};
+//     --color-light-neo: #{$dark};
+//   }
+// }
+
+$body-bg: linear-gradient(
+            120deg, 
+            theme('colors.neo.dark-0') 30%, 
+            theme('colors.neo.dark-17')
+          );
+
+$center-bg: radial-gradient(
+              neo at 20% 20%, 
+              theme('colors.neo.light-87') 25%, 
+              theme('colors.neo.dark-10')
+            ),
+            linear-gradient(
+            120deg,
+            theme('colors.neo.dark-10'),
+            theme('colors.neo.dark-27')
+          );
+
+$center-shadow: inset toRem(10) toRem(15) toRem(40) toRem(-10) theme('colors.neo.light'),
+                inset -20px -30px 12px -32px theme('colors.neo.dark-40'),
+                inset -20px -30px 40px -20px theme('colors.neo.dark-27'),
+                -10px -15px 17px -2px theme('colors.neo.light'),
+                12px 18px 12px -18px theme('colors.neo.dark-40'),
+                12px 20px 20px -12px theme('colors.neo.dark-27');
+
+$center-bg-after: radial-gradient(
+                  neo at 75% 75%, 
+                  theme('colors.neo.light-87') 25%, 
+                  theme('colors.neo.dark-27')
+                );
+
+$waves-shadow: inset toRem(-14) toRem(-20) toRem(20) toRem(-10) theme('colors.neo.light'),
+               inset 14px 20px 20px -10px theme('colors.neo.dark-40'),
+               inset 10px 15px 20px -10px theme('colors.neo.light'),
+               inset -20px -30px 12px -32px theme('colors.neo.dark-40'),
+               inset -20px -30px 40px -20px theme('colors.neo.dark-27'),
+               -10px -15px 17px -2px theme('colors.neo.light'),
+               12px 18px 12px -18px theme('colors.neo.dark-40'),
+               12px 20px 20px -12px theme('colors.neo.dark-17');
+
+$card-bg: linear-gradient(
+            180deg,
+            theme('colors.sev.light') 0%,
+            theme('colors.neo.light-0') 100%);
+$card-filter: drop-shadow(toRem(0) toRem(107.763) toRem(86.21) theme('colors.sev.dark-7'))
+              drop-shadow(toRem(0) toRem(45.0206) toRem(36.0165) theme('colors.sev.dark-5'))
+              drop-shadow(toRem(0) toRem(24.0702) toRem(19.2561) theme('colors.sev.dark-4'))
+              drop-shadow(toRem(0) toRem(13.4935) toRem(10.7948) theme('colors.sev.dark-3'))
+              drop-shadow(toRem(0) toRem(7.16632) toRem(5.73306) theme('colors.sev.dark-2'))
+              drop-shadow(toRem(0) toRem(2.98207) toRem(2.38565) theme('colors.sev.dark-1'));
+
+
+body {
+  background: $body-bg;
+
+  .dark & {
+  	background: linear-gradient(
+            120deg, 
+            theme('colors.neo.black') 30%, 
+            theme('colors.neo.black-92')
+          )
+  }
+}
+
+
+
+$berry-color:          theme('colors.sev.berry-light');
+$berry-bg:             linear-gradient(-45deg,
+                       theme('colors.sev.orange'),
+                       theme('colors.sev.purple'),
+                       theme('colors.sev.berry-dark'),
+                       theme('colors.sev.berry-gray'));
+
+
+
+$btn-dark-bg:              radial-gradient(87.18% 100% at 54.57% 100%,
+                           theme('colors.sev.dark') 0%,
+                           theme('colors.sev.dark-70') 100%);
+$btn-dark-color:           theme('colors.sev.light');
+$btn-dark-shadow:          toRem(-5) toRem(-5) toRem(17) theme('colors.neo.dark-10'),
+                           toRem(2) toRem(2) toRem(5) theme('colors.neo.dark-17'),
+                           inset toRem(0) toRem(-7) toRem(17) theme('colors.sev.black');
+
+$btn-dark-shadow-hover:    toRem(-7) toRem(-7) toRem(12) theme('colors.neo.dark-17'),
+                           toRem(0) toRem(0) toRem(5) theme('colors.neo.dark-17'),
+                           inset toRem(0) toRem(1) toRem(17) theme('colors.sev.black');
+
+
+$btn-berry-bg:            radial-gradient(231.73% 231.73% at 52.13% 100%,
+                          theme('colors.sev.purple') 0%,
+                          theme('colors.sev.orange') 100%);
+      
+$btn-berry-color:         theme('colors.sev.light');
+$btn-berry-shadow:        toRem(-5) toRem(-5) toRem(17) theme('colors.sev.purple-27'),
+                          toRem(2) toRem(2) toRem(5) theme('colors.sev.purple-27'),
+                          inset toRem(0) toRem(-7) toRem(17) theme('colors.sev.dark-27');
+
+$btn-berry-shadow-hover:  toRem(-5) toRem(-5) toRem(17) theme('colors.sev.purple-27'),
+                          toRem(2) toRem(2) toRem(5) theme('colors.sev.purple-27'),
+                          inset toRem(0) toRem(2) toRem(17) theme('colors.sev.dark-27');
+
+
+
+
+
+// Example
+.link {
+  @apply text-neo-light;
+  background-color: theme('colors.neo.light');
+  @apply transition duration-1000 ease-out;
+}
