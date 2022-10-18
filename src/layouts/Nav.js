@@ -58,15 +58,12 @@ export default function Nav(){
               px-10
               py-4
               w-full
+              mx-auto
               md:block
               md:static
               md:w-auto
-              md:mr-auto
               md:px-0
               md:py-0
-              lg:mr-48
-              md:ml-auto
-              md:order-2
             "
             id="navbar">
             <ul
