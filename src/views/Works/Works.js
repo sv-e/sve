@@ -38,12 +38,10 @@ export default function Works(){
         font-semibold
         text-sev-dark
         dark:text-white
+        mb-4
       ">
         <FormattedMessage id="work" />
       </h1>
-
-      <WorkList
-        works={works} />
 
       <div className="
         text-xs
@@ -55,6 +53,7 @@ export default function Works(){
         select-none
         hlg:text-xs
         hlg:leading-5
+        max-w-2xl
       ">
         <p className="mb-5">
           <FormattedMessage id="workDesc" />
@@ -63,6 +62,9 @@ export default function Works(){
         <TagsList
           tags={tags} />
       </div>
+
+      <WorkList
+        works={works} />
 		</>
 	);
 }

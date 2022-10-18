@@ -22,7 +22,14 @@ export default function Social(){
         mt-4
         lg:mt-0
       ">      
-      <li>
+      <li
+        className="
+          ml-0
+          sm:ml-0
+          sm:mt-10
+          lg:mt-12.7
+          hlg-xs:mt-0 hlg:mt-8
+        ">
         <a
           href="https://codepen.io/semenchenko/"
           target="_blank"

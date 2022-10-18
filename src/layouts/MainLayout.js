@@ -14,14 +14,15 @@ export default function MainLayout({children}){
       </div>
       <div
         className="
-          w-screen          
+          w-screen
+          overflow-hidden
           min-h-screen
           flex
           flex-col
           items-center
           justify-between
           pt-20
-          pb-8
+          pb-14
           px-4
           sm:py-20
           sm:px-20

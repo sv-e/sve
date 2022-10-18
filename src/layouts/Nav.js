@@ -34,8 +34,6 @@ export default function Nav(){
             className="
               flex
               items-center
-              order-2
-              md:order-1
               transition
               duration-200
               ease-linear
@@ -51,11 +49,21 @@ export default function Nav(){
 
           <div
             className="
-              hidden
+              fixed
+              z-20
+              bottom-0
+              left-0
+              right-0
+              bg-white
+              px-10
+              py-4
               w-full
               md:block
+              md:static
               md:w-auto
               md:mr-auto
+              md:px-0
+              md:py-0
               lg:mr-48
               md:ml-auto
               md:order-2
@@ -64,8 +72,7 @@ export default function Nav(){
             <ul
               className="
                 flex
-                flex-col
-                md:flex-row
+                justify-between
                 md:space-x-20
                 md:font-medium
                 transition
@@ -84,7 +91,6 @@ export default function Nav(){
                              " text-sm" +
                              " font-medium" +
                              " indent-[2px]" +
-                             " hover:bg-sev-gray-100" +
                              " md:hover:bg-transparent" +
                              " md:border-0" +
                              " md:hover:text-sev-dark" +
@@ -122,7 +128,6 @@ export default function Nav(){
                              " text-sm" +
                              " font-medium" +
                              " indent-[2px]" +
-                             " hover:bg-sev-gray-100" +
                              " md:hover:bg-transparent" +
                              " md:border-0" +
                              " md:hover:text-sev-dark" +
@@ -160,7 +165,6 @@ export default function Nav(){
                              " text-sm" +
                              " font-medium" +
                              " indent-[2px]" +
-                             " hover:bg-sev-gray-100" +
                              " md:hover:bg-transparent" +
                              " md:border-0" +
                              " md:hover:text-sev-dark" +
@@ -189,39 +193,9 @@ export default function Nav(){
             </ul>
           </div>
 
-          <div className="
-            order-1
-            md:order-4
-          ">
+          <div>
             <Switch />
           </div>
-
-          <button
-            data-collapse-toggle="navbar"
-            type="button"
-            className="
-              inline-flex
-              items-center
-              p-2
-              ml-3
-              text-sm
-              text-gray-500
-              rounded-lg
-              md:hidden
-              hover:bg-sev-gray-100
-              focus:outline-none
-              focus:ring-2
-              focus:ring-gray-200
-              dark:text-sev-gray-400
-              dark:hover:bg-gray-700
-              dark:focus:ring-gray-600
-              order-4
-            "
-            aria-controls="navbar"
-            aria-expanded="false">
-            <span className="sr-only">Open menu</span>
-            Icon
-          </button>
         </div>
       </nav>    
     </>
