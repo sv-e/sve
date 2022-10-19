@@ -1,7 +1,8 @@
 import "./App.scss";
 import { useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { HashRouter } from "react-router-dom";
+// import { HashRouter } from "react-router-dom";
+import { BrowserRouter } from "react-router-dom";
 import { MainRoutes } from "./routes";
 
 import { ToastContainer } from "react-toastify";
@@ -51,11 +52,11 @@ export default function App() {
 
         <ToastContainer />
 
-        <HashRouter>
+        <BrowserRouter>
           <MainLayout>
             <MainRoutes />
           </MainLayout>
-        </HashRouter>
+        </BrowserRouter>
       </IntlProvider>
     </div>
   );
