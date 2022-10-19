@@ -55,6 +55,7 @@ export default function Nav(){
               left-0
               right-0
               bg-white
+              dark:bg-black
               px-10
               py-4
               w-full

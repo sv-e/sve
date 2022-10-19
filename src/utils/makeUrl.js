@@ -11,3 +11,5 @@ export const makeUrl = (urlSuff) => `${apiBaseUrl}/${urlSuff}`;
 //     : `${window.location.origin}/api`;
 
 // export const makeUrl = (urlSuff) => `${apiBaseUrl}/${urlSuff}`;
+
+// json-server - https://my-json-server.typicode.com/userName(github.com)/RepositirieName(github.com)/
