@@ -11,7 +11,3 @@ export const makeUrl = (urlSuff) => `${apiBaseUrl}/${urlSuff}`;
 //     : `${window.location.origin}/api`;
 
 // export const makeUrl = (urlSuff) => `${apiBaseUrl}/${urlSuff}`;
-
-
-// http://localhost:3001
-// https://my-json-server.typicode.com/sv-e/sve/

@@ -22,7 +22,7 @@ export default function ContactForm({ isHome }){
     try {
       emailjs
             .send(
-              "default_service",
+              "service_l1mv04p",
               "template_21hktbk",
               values,
               "CqTq9HDX6oPy0uT62"
