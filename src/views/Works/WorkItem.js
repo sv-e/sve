@@ -12,7 +12,8 @@ export default function WorkItem({ work }){
           card
           max-h-[18.75rem]
           ${work.size === 2 ? "col-span-2" : ""}
-          ${info.countryCode !== "ru" && work.status ? "" : "hidden"}
+          ${info.countryCode === "ru" ? "" : ""}
+          ${info.countryCode === "ru" || work.status ? "" : "hidden"}
         `}>
         <span
           className="
