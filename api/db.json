@@ -22,7 +22,7 @@
       ],
       "links":[
         {"id" : 1, "name": "web", "url": "http://semen4enko.esy.es/cats/"},    
-        {"id" : 2, "name": "figma", "url": "https://www.figma.com/proto/czNPHAuVZRZk8lzd7FDXL2/Untitled?node-id=3%3A1&scaling=contain&page-id=0%3A1"}        
+        {"id" : 2, "name": "figma", "url": "https://www.figma.com/proto/czNPHAuVZRZk8lzd7FDXL2/Untitled?node-id=3%3A1&scaling=scale-down-width&page-id=0%3A1&starting-point-node-id=3%3A1&hide-ui=1"}        
       ],
       "status": true
     },
@@ -47,7 +47,7 @@
       ],
       "links":[
         {"id" : 1, "name": "web", "url": "https://lime7.github.io/zenweb/"},        
-        {"id" : 2, "name": "figma", "url": "https://www.figma.com/proto/aW2eZG7IemSOhtC4itMIYKQY/WPtest?node-id=27%3A0&scaling=contain&page-id=0%3A1"}        
+        {"id" : 2, "name": "figma", "url": "https://www.figma.com/proto/aW2eZG7IemSOhtC4itMIYKQY/WPtest?node-id=27%3A0&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=27%3A0&hide-ui=1"}        
       ],
       "status": true
     },
@@ -73,7 +73,7 @@
       ],
       "links":[
         {"id" : 1, "name": "web", "url": "https://lime7.github.io/auto/"},        
-        {"id" : 2, "name": "figma", "url": "https://www.figma.com/proto/QYNKDsybkbsWj9nzRmK42C/Auto-from-USA?node-id=1%3A2&scaling=contain&page-id=0%3A1"}        
+        {"id" : 2, "name": "figma", "url": "https://www.figma.com/proto/QYNKDsybkbsWj9nzRmK42C/Auto-from-USA?node-id=1%3A2&scaling=scale-down-width&page-id=0%3A1&starting-point-node-id=1%3A2&hide-ui=1"}        
       ],
       "status": true
     },
@@ -211,7 +211,8 @@
         {"id" : 7, "name": "web design"}
       ],
       "links":[
-        {"id" : 1, "name": "web", "url": "https://lime7.github.io/tws/"}
+        {"id" : 1, "name": "web", "url": "https://lime7.github.io/tws/"},
+        {"id" : 2, "name": "figma", "url": "https://www.figma.com/proto/rF4BWiVDlhHSGlsUaVVNfS/Test-App-Design?node-id=11%3A0&scaling=scale-down-width&page-id=0%3A1&hide-ui=1"}        
       ],
       "status": true
     },
@@ -251,7 +252,7 @@
         {"id" : 3, "name": "web design"}
       ],
       "links":[        
-        {"id" : 2, "name": "figma", "url": "https://www.figma.com/proto/n7MGyUHyv4CCpuFqeXsxIC/Fucus-design?node-id=1%3A2&scaling=contain&page-id=0%3A1&starting-point-node-id=1%3A2"}
+        {"id" : 2, "name": "figma", "url": "https://www.figma.com/proto/n7MGyUHyv4CCpuFqeXsxIC/Fucus-design?node-id=1%3A2&scaling=scale-down-width&page-id=0%3A1&starting-point-node-id=1%3A2&show-proto-sidebar=1&hide-ui=1"}
       ],
       "status": true
     },
