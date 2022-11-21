@@ -237,7 +237,10 @@ export default function Work(){
                 </div>
               ) : link?.name === "figma" ? (
                 <div className="mx-2">
-                  <button
+                  <a
+                    href={link?.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="
                       text-xs
                       leading-none
@@ -287,7 +290,7 @@ export default function Work(){
                         <FormattedMessage id="design" />
                       </span>
                     </span>
-                  </button>
+                  </a>
                 </div>
               ) : (
                 null
