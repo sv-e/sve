@@ -131,7 +131,7 @@ export default function Social(){
           hlg-xs:mt-0 hlg:mt-8
         ">
         <a
-          href="https://stackexchange.com/users/8595873/hamster"
+          href="https://www.linkedin.com/in/elena-s/"
           target="_blank"
           rel="noopener noreferrer"
           aria-label="Social link"
