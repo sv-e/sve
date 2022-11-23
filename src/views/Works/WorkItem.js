@@ -10,6 +10,7 @@ export default function WorkItem({ work }){
         className={`
           rounded-3xl
           card
+          dark:bg-white
           max-h-[18.75rem]
           ${work.size === 2 ? "col-span-2" : ""}
           ${info.countryCode === "ru" ? "" : ""}

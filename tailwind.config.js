@@ -60,7 +60,8 @@ module.exports = {
       },
       boxShadow: {
         "switch-inner-dark": "inset -.25rem -.25rem .5rem rgba(var(--color-white), .7), inset .25rem .25rem .875rem rgba(var(--color-dark), .07)",
-        "switch-inner-light": "inset .25rem .25rem .875rem rgba(var(--color-white), .07), inset -.25rem -.25rem .5rem rgba(var(--color-dark), .52)"
+        "switch-inner-light": "inset .25rem .25rem .875rem rgba(var(--color-white), .07), inset -.25rem -.25rem .5rem rgba(var(--color-dark), .52)",
+        "modal": "0 1rem 3rem rgba(var(--color-black), .17)"
       },
       screens: {
         "hmd": { "raw": "(min-width:768px),(max-height: 768px)" },

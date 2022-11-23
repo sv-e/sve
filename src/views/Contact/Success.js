@@ -17,29 +17,35 @@ export default function Success({ show, onHide }){
           md:inset-0
           h-modal
           md:h-full
-          justify-center
+          flex
           items-center
+          justify-center
+          bg-white/[.37]
+          dark:bg-black/[.5]
           ${show ? "visible" : "hidden"}
         `}>
         <div
           className="
             relative
             p-4
-            w-full
-            max-w-lg
+            w-full            
             h-full
+            mx-auto
             md:h-auto
           ">
 
           <div
             className="
               relative
-              bg-white/[.92]
-              dark:bg-sev-neo-10
+              max-w-lg
+              mx-auto
+              bg-white/[.98]
+              dark:bg-black/[.87]
               rounded-3xl
               p-[7%]
               text-center
               backdrop-blur-md
+              shadow-modal
             ">
 
             <div>
@@ -53,16 +59,26 @@ export default function Success({ show, onHide }){
                     text-[#2ecc71]
                   " />
               </div>
-              <h2 className="
-                text-3xl
-                uppercase
-                font-semibold
-                text-sev-dark
-                dark:text-white
-                mb-8
-              ">
-                <FormattedMessage id="success" />!
-              </h2>
+              <div className="mb-8">
+                <h2
+                  className="
+                    text-3xl
+                    uppercase
+                    font-semibold
+                    text-sev-dark
+                    dark:text-white
+                    mb-2
+                  ">
+                  <FormattedMessage id="success" />
+                </h2>
+                <p
+                  className="
+                    text-sev-gray-300
+                    dark:text-sev-gray-100
+                  ">
+                  <FormattedMessage id="successMessage" />
+                </p>
+              </div>
 
               <button
                 type="button"
@@ -78,7 +94,12 @@ export default function Success({ show, onHide }){
                   items-center
                 "
                 onClick={onHide}>
-                close
+                <Icon
+                  icon="close"
+                  className="
+                    w-10
+                    h-10
+                  " />
               </button>
             </div>
           </div>

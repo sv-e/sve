@@ -1,13 +1,13 @@
 import { FormattedMessage } from "react-intl";
-import { useParams, useNavigate } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { useFetchWorkMutation } from "../../redux/services/worksApi";
-import Loader from "../../components/Loader";
-
 import Icon from "../../components/Icon";
+import Loader from "../../components/Loader";
+import ScrollButton from "../../components/ScrollButton";
+import BackButton from "../../components/BackButton";
 
 export default function Work(){
-  const navigate = useNavigate();
   const { id } = useParams();  
 
   const [work, setWork] = useState([]);
@@ -27,7 +27,7 @@ export default function Work(){
     fetchData();
   }, []);
 
-  const isFetching = isFetchingWork;
+  const isFetching = isFetchingWork;  
 
   if (isFetching) {
     return (
@@ -37,14 +37,9 @@ export default function Work(){
 
 	return (
 		<>
-      <button
-        onClick={() => navigate(-1)}
-        className="
-          text-sev-gray-300
-          dark:text-sev-gray-100
-        ">
-        <small>Back</small>
-      </button>      
+      <ScrollButton />
+
+      <BackButton />     
 
       <div
         className="
@@ -154,6 +149,7 @@ export default function Work(){
                       before:h-full
                       btn
                       btn-berry
+                      dark:text-white
                       disabled:opacity-50
                     ">
                     <span

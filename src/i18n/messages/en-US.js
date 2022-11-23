@@ -17,11 +17,14 @@ const en = {
     workDesc: "The last 5+ years I'm developing using the following technologies:",
     message: "Send me a message",
     send: "Send",
-    success: "Success",
+    success: "Well done!",
+    successMessage: "Your message has been sent successfully.",
     github: "GitHub",
     codepen: "CodePen",
     design: "Design",
-    preview: "Preview"
+    preview: "Preview",
+    back: "Back",
+    top: "Top"
   }
 };
 

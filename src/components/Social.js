@@ -131,6 +131,31 @@ export default function Social(){
           hlg-xs:mt-0 hlg:mt-8
         ">
         <a
+          href="https://stackexchange.com/users/8595873/hamster"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Social link"
+          className="
+            text-sev-dark
+            dark:text-white
+            transition
+            duration-300
+            ease-linear
+          ">
+          <Icon
+            icon="linkedin"
+            className="w-4 h-4" />
+        </a>
+      </li>
+      <li
+        className="
+          ml-10
+          sm:ml-0
+          sm:mt-10
+          lg:mt-12.7
+          hlg-xs:mt-0 hlg:mt-8
+        ">
+        <a
           href="https://www.buymeacoffee.com/lime27"
           target="_blank"
           rel="noopener noreferrer"
