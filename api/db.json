@@ -317,7 +317,8 @@
     {"id": 16, "name": "SCSS"},
     {"id": 17, "name": "Git"},
     {"id": 18, "name": "Gulp"},
-    {"id": 19, "name": "Kanban"},
+    {"id": 19, "name": "Jira"},
+    {"id": 19, "name": "Atlassian"},
     {"id": 20, "name": "React"},
     {"id": 21, "name": "WP"}
   ]
