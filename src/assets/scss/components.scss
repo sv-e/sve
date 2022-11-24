@@ -120,7 +120,6 @@
 
 
 // Button Berry
-
 @mixin berry {
   color: $berry-color;
   background: $berry-bg;
@@ -130,23 +129,25 @@
 
 .berry {
   @include berry;
-  // box-shadow: $berry-shadow;  
 
-  @apply transition duration-200 ease-linear select-none;  
+  @apply transition duration-200 ease-linear select-none; 
 
-  &:before {
-    @include berry;
-    margin-top: 7%;
-    z-index: -1;
-    filter: blur(17px);
-    opacity: 0.7;
-    border-radius: inherit;
-    @apply transition duration-200 ease-linear select-none;
+  @screen md {
+    &:before {
+      @include berry;
+      margin-top: 7%;
+      z-index: -1;
+      filter: blur(17px);
+      opacity: 0.7;
+      border-radius: inherit;
+      @apply transition duration-200 ease-linear select-none;
+    }
+
+    &:hover:before {
+      opacity: 0.1;
+    }
   }
-
-  &:hover:before {
-    opacity: 0.1;
-  }
+  
 }
 
 @keyframes BerryAnimation {
@@ -170,20 +171,32 @@
   &-dark {
     color: $btn-dark-color;
     background: $btn-dark-bg;
-    box-shadow: $btn-dark-shadow;
 
-    &:hover {
-      box-shadow: $btn-dark-shadow-hover;
+    @screen md {
+      box-shadow: $btn-dark-shadow;
+
+      &:hover {
+        box-shadow: $btn-dark-shadow-hover;
+      }
     }
   }
 
   &-berry {
     color: $btn-berry-color;
     background: $btn-berry-bg;
-    box-shadow: $btn-berry-shadow;
 
-    &:hover {
-      box-shadow: $btn-berry-shadow-hover;
-    }
+    @screen md {
+      box-shadow: $btn-berry-shadow;
+
+      &:hover {
+        box-shadow: $btn-berry-shadow-hover;
+      }
+    }    
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .btn {
+    transition: none;
   }
 }
