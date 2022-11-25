@@ -5,16 +5,16 @@ import Button from "../../components/Button";
 export default function Home(){
 	return (
 		<>
-      <h1 className="
-        text-3xl
+      <h1 className="        
         uppercase
         font-bold
         text-sev-dark
         dark:text-white
         my-4
-        sm:font-semibold
-        lg:text-5xl
-        hlg:text-3xl
+        text-3xl
+        lg:text-[5vh]
+        leading-tight
+        landscape:bg-red
       ">
         <FormattedMessage id="wellcome" />
       </h1>
@@ -30,15 +30,10 @@ export default function Home(){
       </div>
 
       <div className="
-        text-xs
-        leading-5
-        sm:text-sm
-        lg:leading-7
+        text-[calc(0.75rem+0.25vh)]
+        leading-[calc(1rem+1vh)]
         text-sev-gray-300
         dark:text-sev-gray-100
-        select-none
-        hlg:text-xs
-        hlg:leading-5
       ">
         <p className="mb-5">
           <FormattedMessage id="wellcomeDesc" values={{ tag: <br /> }}/>

@@ -3,6 +3,7 @@ module.exports = {
   content: [
     "./src/**/*.{js,jsx,ts,tsx}"
   ],
+  mode: "jit",
   darkMode: "class", // or "media" or "class"
   theme: {
     extend: {
@@ -10,7 +11,8 @@ module.exports = {
         padding: "15px"
       },
       fontFamily: {
-        sans: ["Montserrat", "sans-serif"]
+        sans: ["Montserrat", "sans-serif"],
+        cursive: ["Audiowide", "cursive"]
       },
       colors: {
         sev: {
@@ -27,13 +29,17 @@ module.exports = {
           "dark-70":      "rgba(var(--color-dark), 0.7)",
           "dark":         "rgba(var(--color-dark), 1)",          
           "light":        "rgba(var(--color-light), 1)",
+          "light-7":      "rgba(var(--color-light), 0.07)",
           "berry-light":  "rgba(var(--color-berry-light), 1)",
           "berry-gray":   "rgba(var(--color-berry-gray), 1)",
           "berry-dark":   "rgba(var(--color-berry-dark), 1)",          
           "purple":       "rgba(var(--color-purple), 1)",
           "purple-27":    "rgba(var(--color-purple), 0.27)",
           "orange":       "rgba(var(--color-orange), 1)",
-          "black":        "rgba(var(--color-black), 1)"         
+          "black":        "rgba(var(--color-black), 1)",
+          "white":        "rgba(var(--color-white), 1)",
+          "white-7":      "rgba(var(--color-white), 0.07)",
+          "white-10":     "rgba(var(--color-white), 0.1)"
         },
         neo: {          
           "dark-0":      "rgba(var(--color-neo-dark), 0)",
@@ -66,8 +72,7 @@ module.exports = {
       screens: {
         "hmd": { "raw": "(min-width:768px),(max-height: 768px)" },
         "hlg": { "raw": "(min-width:768px),(max-height: 992px)" },
-        "hlg-xs": { "raw": "(max-width:576px)" },
-        "landscape": { "raw" : "(orientation: landscape)" }
+        "hlg-xs": { "raw": "(max-width:576px)" }
       }
     }
   }

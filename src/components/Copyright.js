@@ -19,15 +19,13 @@ export default function Copyright(){
         sm:bottom-0
         text-center
         sm:mr-4
-        text-xs
-        lg:text-sm
         xl:mr-12.7
         xxl:text-base
         mb-4
         sm:mb-0
         select-none
-        hlg:text-xs
-        hlg:leading-5
+        text-[calc(0.625rem+0.25vh)]
+        leading-[calc(0.75rem+1vh)]
       ">
       <FormattedMessage id="copyright"  values={{ tag: new Date().getFullYear() }} />
     </span>

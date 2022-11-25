@@ -1,5 +1,5 @@
 import "./App.scss";
-import { useEffect } from "react";
+import { useEffect, useMemo } from "react";
 import { useSelector, useDispatch } from "react-redux";
 // import { HashRouter } from "react-router-dom";
 import { BrowserRouter } from "react-router-dom";
@@ -17,6 +17,9 @@ import Loader from "./components/Loader";
 
 import { setCountryCode } from "./redux/slices/infoSlice";
 import { useGetCountryCodeMutation } from "./redux/services/locationApi";
+
+import ReactGA from "react-ga4";
+import TagManager from "react-gtm-module";
 
 export default function App() {
   const dispatch = useDispatch();
@@ -36,6 +39,22 @@ export default function App() {
   }, []);
 
   const locale = info.countryCode === "ru" ? "ru" : "en";
+
+  const isProdDomain = useMemo(() => {
+    return (
+      window.location.href.includes("herokuapp.com")
+    );
+  }, [window.location.href]);
+
+  useEffect(() => {
+    if (isProdDomain) {
+      ReactGA.initialize("G-460PGEB7KD");
+      ReactGA.send("pageview");
+      TagManager.initialize({
+        gtmId: "GT-NN6CCRB"
+      });
+    }
+  }, [isProdDomain]);
 
   if (isLoading) {
     return (

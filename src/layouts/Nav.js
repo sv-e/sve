@@ -13,7 +13,7 @@ export default function Nav(){
         bg-white
         px-2
         sm:px-4
-        md:py-3
+        py-3
         fixed
         top-0
         left-0
