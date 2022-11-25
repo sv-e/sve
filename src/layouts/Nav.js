@@ -13,13 +13,14 @@ export default function Nav(){
         bg-white
         px-2
         sm:px-4
-        py-3
+        md:py-3
         fixed
         top-0
         left-0
         right-0
         dark:bg-black
         z-50
+        landscape:bg-dark
       ">
         <div className="
           container
@@ -57,7 +58,6 @@ export default function Nav(){
               bg-white
               dark:bg-black
               px-10
-              py-4
               w-full
               mx-auto
               md:block
@@ -77,13 +77,17 @@ export default function Nav(){
                 duration-200
                 ease-linear
               ">
-              <li>
+              <li className="w-1/3">
                 <NavLink
                   to={APP_ROUTE.HOME}
                   className={({ isActive }) => (isActive ? "after:opacity-1" : "after:opacity-0") +                               
                              " flex" +
                              " items-center" +
+                             " justify-center" +
                              " relative" +
+                             " py-4" +
+                             " md:py-0" +
+                             " w-full" +
                              " uppercase" +
                              " text-sev-dark" +
                              " text-sm" +
@@ -114,13 +118,17 @@ export default function Nav(){
                   <FormattedMessage id="home" />
                 </NavLink>
               </li>
-              <li>
+              <li className="w-1/3">
                 <NavLink
                   to={APP_ROUTE.WORKS}
                   className={({ isActive }) => (isActive ? "after:opacity-1" : "after:opacity-0") +                               
                              " flex" +
                              " items-center" +
+                             " justify-center" +
                              " relative" +
+                             " py-4" +
+                             " md:py-0" +
+                             " w-full" +
                              " uppercase" +
                              " text-sev-dark" +
                              " text-sm" +
@@ -151,13 +159,17 @@ export default function Nav(){
                   <FormattedMessage id="work" />
                 </NavLink>
               </li>
-              <li>
+              <li className="w-1/3">
                 <NavLink
                   to={APP_ROUTE.CONTACT}
                   className={({ isActive }) => (isActive ? "after:opacity-1" : "after:opacity-0") +                               
                              " flex" +
                              " items-center" +
+                             " justify-center" +
                              " relative" +
+                             " py-4" +
+                             " md:py-0" +
+                             " w-full" +
                              " uppercase" +
                              " text-sev-dark" +
                              " text-sm" +
