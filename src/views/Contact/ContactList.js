@@ -5,6 +5,7 @@ export default function ContactList(){
   return (
     <div
       className="
+        meta
         text-[calc(0.75rem+0.25vh)]
         leading-[calc(1rem+1vh)]
         my-auto

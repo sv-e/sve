@@ -1,5 +1,4 @@
 import { FormattedMessage } from "react-intl";
-
 import Button from "../../components/Button";
 
 export default function Home(){
@@ -30,6 +29,7 @@ export default function Home(){
       </div>
 
       <div className="
+        meta
         text-[calc(0.75rem+0.25vh)]
         leading-[calc(1rem+1vh)]
         text-sev-gray-300
