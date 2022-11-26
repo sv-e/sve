@@ -11,38 +11,51 @@ const Home = () => {
   const root = useRef();
 
   // const tl = gsap.timeline();
-  // const h1 = useRef(null);
+  const h1 = useRef(null);
+  const btn = useRef(null);
+  const meta = useRef(null);
 
   const itemsRef = useRef([]);
 
   useLayoutEffect(() => {
     let ctx = gsap.context(() => {
-      // gsap
-      //   .to("h1", {
-      //     startAt: { y: -100, opacity: 0 },
-      //     y: 0,
-      //     duration: 1,
-      //     opacity: 1
-      //   });
-      // gsap
-      //   .to(".meta", {
-      //     startAt: { y: 100, opacity: 0 },
-      //     y: 0,
-      //     duration: 1,
-      //     opacity: 1
-      //   });
+      gsap.from(h1.current, 2, {
+        delay: 0.25,
+        opacity: 0,
+        y: 20,
+        ease: "expo.easeInOut",
+        immediateRender: !0
+      });
+
+      gsap.from(btn.current, 2, {
+        delay: 0.5,
+        opacity: 0,
+        y: 20,
+        ease: "expo.easeInOut",
+        immediateRender: !0
+      });
+
+      gsap.from(meta.current, 2, {
+        delay: 0.75,
+        opacity: 0,
+        y: 20,
+        ease: "expo.easeInOut",
+        immediateRender: !0
+      });
 
       anime.timeline({ loop: false }).add({
         targets: itemsRef.current,
-        translateY: ["1.1em", 0],
-        translateX: ["0.55em", 0],
-        translateZ: 0,
-        rotateZ: [180, 0],
-        duration: 750,
-        easing: "easeOutExpo",
+        translateY: [-180, 0],
+        scale: [0, 1],
+        opacity: [0, 1],
+        rotationX: 0,
+        rotationY: 0,
+        duration: 1250,
+        easing: "easeOutBack",
         delay: function (el, i) {
-          return 50 * i;
-        }
+          return 500 + 50 * i;
+        },
+        immediateRender: true
       });
     }, root);
 
@@ -57,52 +70,73 @@ const Home = () => {
         flex-col
         items-center
         justify-between
+        flex-auto
       ">
-      <h1 className="        
-        uppercase
-        font-bold
-        text-sev-dark
-        dark:text-white
-        my-4
-        text-3xl
-        lg:text-[5vh]
-        leading-tight
-        landscape:bg-red
-      ">
-        <FormattedMessage id="wellcome" />
-
-        {formatMessage({ id: "wellcome" }).split("").map((item, index) => {
+      <h1
+        ref={h1}
+        className="        
+          uppercase
+          font-bold
+          text-sev-dark
+          dark:text-white
+          my-4
+          text-3xl
+          lg:text-[5vh]
+          leading-tight
+          flex
+          items-center
+          justify-center
+          max-lg:!transform-none
+          max-lg:!opacity-100
+        ">
+        {formatMessage({ id: "wellcome" }).split(" ").map((word, index) => {
           return (
             <div
-              className="i"
               key={index}
-              ref={(el) => {
-                itemsRef.current[index] = el;
-              }}
-            >
-              {item} &nbsp;
-            </div>
+              className="
+                mr-4
+                flex
+              ">
+              {word.split("").map((letter, i) => {
+                return (
+                  <div
+                    className="inline-block origin-right"
+                    key={i}
+                    ref={(el) => {
+                      itemsRef.current[i] = el;
+                    }}>
+                    {letter}
+                  </div>
+                );
+              })}
+            </div>            
           );
         })}
       </h1>
 
       <div
+        ref={btn}
         className="
           my-4
           sm:my-5
           md:my-5
           lg:m-auto
+          max-lg:!transform-none
+          max-lg:!opacity-100
         ">
         <Button />
       </div>
 
-      <div className="
-        meta
-        text-[calc(0.75rem+0.25vh)]
-        leading-[calc(1rem+1vh)]
-        text-sev-gray-300
-        dark:text-sev-gray-100
-      ">
+      <div
+        ref={meta}
+        className="
+          text-[calc(0.75rem+0.25vh)]
+          leading-[calc(1rem+1vh)]
+          text-sev-gray-300
+          dark:text-sev-gray-100
+          max-lg:!transform-none
+          max-lg:!opacity-100
+        ">
         <p className="mb-5">
           <FormattedMessage id="wellcomeDesc" values={{ tag: <br /> }}/>
         </p>

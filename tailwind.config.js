@@ -72,7 +72,8 @@ module.exports = {
       screens: {
         "hmd": { "raw": "(min-width:768px),(max-height: 768px)" },
         "hlg": { "raw": "(min-width:768px),(max-height: 992px)" },
-        "hlg-xs": { "raw": "(max-width:576px)" }
+        "hlg-xs": { "raw": "(max-width:576px)" },
+        "max-lg": {"max": "992px"}
       }
     }
   }
