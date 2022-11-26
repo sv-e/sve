@@ -8,7 +8,7 @@ import Success from "./Success";
 
 import Icon from "../../components/Icon";
 
-export default function ContactForm({ isHome }){
+const ContactForm = ({ isHome }) => {
   const { formatMessage } = useIntl();
 
   const [showSuccess, setShowSuccess] = useState(false);
@@ -105,6 +105,8 @@ export default function ContactForm({ isHome }){
                       dark:text-sev-white
                       dark:border-sev-gray-300
                       dark:focus:border-white
+                      placeholder-neo-dark-87
+                      dark:placeholder-neo-white
                     "
                     value={values.name}
                     onBlur={handleBlur}
@@ -159,6 +161,8 @@ export default function ContactForm({ isHome }){
                         dark:text-sev-white
                         dark:border-sev-gray-300
                         dark:focus:border-white
+                        placeholder-neo-dark-87
+                        dark:placeholder-neo-white
                       "
                       value={values.email}
                       onBlur={handleBlur}
@@ -220,6 +224,8 @@ export default function ContactForm({ isHome }){
                       dark:text-sev-white
                       dark:border-sev-gray-300
                       dark:focus:border-white
+                      placeholder-neo-dark-87
+                      dark:placeholder-neo-white
                     "
                     value={values.message}
                     onBlur={handleBlur}
@@ -300,4 +306,6 @@ export default function ContactForm({ isHome }){
       </Formik>
     </>
   );
-}
+};
+
+export default ContactForm;

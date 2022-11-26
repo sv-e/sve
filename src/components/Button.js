@@ -1,10 +1,8 @@
 import { FormattedMessage } from "react-intl";
-
 import CV from "../media/CV-2022.pdf";
-
 import Icon from "./Icon";
 
-export default function Button(){
+const Button = () => {
   return (
     <button
       className="
@@ -31,7 +29,7 @@ export default function Button(){
         before:top-0
         before:w-full
         before:h-full
-        hover:translate-y-1
+        md:hover:translate-y-1
       "
       onClick={() => window.open(CV)}
       target="_blank"
@@ -45,7 +43,7 @@ export default function Button(){
           transition
           duration-200
           ease-linear
-          group-hover:-translate-y-[2px]
+          md:group-hover:-translate-y-[2px]
         ">
         <Icon
           icon="dw"
@@ -60,4 +58,6 @@ export default function Button(){
       </span>
     </button>
   );
-}
+};
+
+export default Button;

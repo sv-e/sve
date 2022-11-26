@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { setTheme } from "../redux/slices/themeSlice";
 
-export default function Switch(){
+const Switch = () => {
   const dispatch = useDispatch();
 
   const { themeStore: { isDarkTheme } } = useSelector((state) => ({ themeStore: state.themeStore }));
@@ -100,4 +100,6 @@ export default function Switch(){
       </label>
     </div>
   );
-}
+};
+
+export default Switch;

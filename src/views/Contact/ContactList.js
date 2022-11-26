@@ -1,20 +1,16 @@
-// import { FormattedMessage } from "react-intl";
 import Icon from "../../components/Icon";
 
-export default function ContactList(){
+const ContactList = () => {
   return (
     <div
       className="
+        meta
+        text-[calc(0.75rem+0.25vh)]
+        leading-[calc(1rem+1vh)]
         my-auto
-        text-xs
-        leading-5
-        sm:text-sm
-        lg:leading-7
         text-sev-gray-300
         dark:text-white
         select-none
-        hlg:text-xs
-        hlg:leading-5
       ">
       {/* <a
         href="https://t.me/semen4enkov"
@@ -54,4 +50,6 @@ export default function ContactList(){
       </a>
     </div>
   );
-}
+};
+
+export default ContactList;

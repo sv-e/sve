@@ -10,18 +10,20 @@ const Contact = lazy(() => import("./views/Contact/Contact"));
 
 export const MainRoutes = () => {  
   return (
-    <Suspense fallback={<Loader />}>
-      <Routes>
-        <Route exact path={APP_ROUTE.HOME} element={<Home />} />
-        <Route exact path={APP_ROUTE.WORKS} element={<Works />} />
-        <Route exact path={APP_ROUTE.WORK} element={<Work />} />
-        <Route exact path={APP_ROUTE.CONTACT} element={<Contact />} />
+    <>
+      <Suspense fallback={<Loader />}>
+        <Routes>
+          <Route exact path={APP_ROUTE.HOME} element={<Home />} />
+          <Route exact path={APP_ROUTE.WORKS} element={<Works />} />
+          <Route exact path={APP_ROUTE.WORK} element={<Work />} />
+          <Route exact path={APP_ROUTE.CONTACT} element={<Contact />} />
 
-        <Route
-          path={APP_ROUTE.ENTRY}
-          element={<Navigate replace to={APP_ROUTE.HOME} />}
-        />
-      </Routes>
-    </Suspense>
+          <Route
+            path={APP_ROUTE.ENTRY}
+            element={<Navigate replace to={APP_ROUTE.HOME} />}
+          />
+        </Routes>
+      </Suspense>
+    </>
   );
 };
