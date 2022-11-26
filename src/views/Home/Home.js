@@ -1,9 +1,9 @@
 import { FormattedMessage } from "react-intl";
 import Button from "../../components/Button";
 
-export default function Home(){
-	return (
-		<>
+const Home = () => {
+  return (
+    <>
       <h1 className="        
         uppercase
         font-bold
@@ -43,6 +43,8 @@ export default function Home(){
           <FormattedMessage id="wellcomeGo" />
         </p>
       </div>
-		</>
-	);
-}
+    </>
+  );
+};
+
+export default Home;

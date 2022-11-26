@@ -1,5 +1,5 @@
-export default function TagsList({ tags }){
-	return (
+const TagsList = ({ tags }) => {
+  return (
     <ul
       className="
         list-unstyled
@@ -17,5 +17,7 @@ export default function TagsList({ tags }){
         </li>
       ))}
     </ul>
-	);
-}
+  );
+};
+
+export default TagsList;

@@ -1,6 +1,6 @@
 import { FormattedMessage } from "react-intl";
 
-export default function Copyright(){
+const Copyright = () => {
   return (
     <span
       className="
@@ -30,4 +30,6 @@ export default function Copyright(){
       <FormattedMessage id="copyright"  values={{ tag: new Date().getFullYear() }} />
     </span>
   );
-}
+};
+
+export default Copyright;

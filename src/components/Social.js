@@ -1,6 +1,6 @@
 import Icon from "./Icon";
 
-export default function Social(){
+const Social = () => {
   return (
     <ul
       className="
@@ -200,4 +200,6 @@ export default function Social(){
       </li>
     </ul>
   );
-}
+};
+
+export default Social;

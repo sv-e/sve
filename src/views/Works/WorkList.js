@@ -1,8 +1,7 @@
-// import { FormattedMessage } from "react-intl";
 import WorkItem from "./WorkItem";
 
-export default function WorkList({ works }){
-	return (
+const WorkList = ({ works }) => {
+  return (
     <div
       className="
         bg-white/[.35]
@@ -46,5 +45,7 @@ export default function WorkList({ works }){
         ))}
       </div>
     </div>
-	);
-}
+  );
+};
+
+export default WorkList;

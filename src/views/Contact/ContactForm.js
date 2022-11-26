@@ -8,7 +8,7 @@ import Success from "./Success";
 
 import Icon from "../../components/Icon";
 
-export default function ContactForm({ isHome }){
+const ContactForm = ({ isHome }) => {
   const { formatMessage } = useIntl();
 
   const [showSuccess, setShowSuccess] = useState(false);
@@ -306,4 +306,6 @@ export default function ContactForm({ isHome }){
       </Formik>
     </>
   );
-}
+};
+
+export default ContactForm;

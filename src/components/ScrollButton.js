@@ -2,7 +2,7 @@ import { useState } from "react";
 import { FormattedMessage } from "react-intl";
 import Icon from "./Icon";
 
-export default function ScrollButton(){
+const ScrollButton = () => {
   const [visible, setVisible] = useState(false);
     
   const toggleVisible = () => {
@@ -30,8 +30,10 @@ export default function ScrollButton(){
       className="
         fixed
         z-20
-        right-14
-        bottom-8
+        right-4
+        lg:right-14
+        bottom-14
+        lg-bottom-8
         flex-col
         items-center
         justify-center
@@ -54,4 +56,6 @@ export default function ScrollButton(){
       </small>
     </button>
   );
-}
+};
+
+export default ScrollButton;

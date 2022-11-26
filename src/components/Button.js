@@ -1,10 +1,8 @@
 import { FormattedMessage } from "react-intl";
-
 import CV from "../media/CV-2022.pdf";
-
 import Icon from "./Icon";
 
-export default function Button(){
+const Button = () => {
   return (
     <button
       className="
@@ -60,4 +58,6 @@ export default function Button(){
       </span>
     </button>
   );
-}
+};
+
+export default Button;

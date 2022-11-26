@@ -1,10 +1,10 @@
 import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 
-export default function WorkItem({ work }){
+const WorkItem = ({ work }) => {
   const info = useSelector((state) => state.info);
 
-	return (
+  return (
     <div
       className={`
         rounded-3xl
@@ -54,5 +54,7 @@ export default function WorkItem({ work }){
           </Link>
       </span>
     </div>
-	);
-}
+  );
+};
+
+export default WorkItem;

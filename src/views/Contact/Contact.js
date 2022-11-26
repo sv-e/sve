@@ -2,9 +2,9 @@ import { FormattedMessage } from "react-intl";
 import ContactForm from "./ContactForm";
 import ContactList from "./ContactList";
 
-export default function Contact(){
-	return (
-		<>
+const Contact = () => {
+  return (
+    <>
       <h1 className="        
         uppercase
         font-bold
@@ -52,6 +52,8 @@ export default function Contact(){
       </div>
       
       <ContactList />
-		</>
-	);
-}
+    </>
+  );
+};
+
+export default Contact;

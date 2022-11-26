@@ -1,7 +1,6 @@
-// import { FormattedMessage } from "react-intl";
 import Icon from "../../components/Icon";
 
-export default function ContactList(){
+const ContactList = () => {
   return (
     <div
       className="
@@ -51,4 +50,6 @@ export default function ContactList(){
       </a>
     </div>
   );
-}
+};
+
+export default ContactList;

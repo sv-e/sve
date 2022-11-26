@@ -2,7 +2,7 @@ import { useNavigate } from "react-router-dom";
 import { FormattedMessage } from "react-intl";
 import Icon from "./Icon";
 
-export default function BackButton(){
+const BackButton = () => {
   const navigate = useNavigate();
 
   return (
@@ -27,6 +27,8 @@ export default function BackButton(){
       <small>
         <FormattedMessage id="back" />
       </small>
-    </button> 
+    </button>
   );
-}
+};
+
+export default BackButton;

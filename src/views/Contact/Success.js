@@ -1,7 +1,7 @@
 import { FormattedMessage } from "react-intl";
 import Icon from "../../components/Icon";
 
-export default function Success({ show, onHide }){
+const Success = ({ show, onHide }) => {
   return (
     <div 
       className={`
@@ -109,4 +109,7 @@ export default function Success({ show, onHide }){
       </div>
     </div>
   );
-}
+};
+
+export default Success;
+

@@ -105,11 +105,15 @@ export default function Work(){
             select-none
             hlg:text-xs
             hlg:leading-5
+            flex
+            flex-wrap
+            items-center
+            justify-center
           ">
             {work?.tags?.map(tag => (
               <span
                 key={tag.id}
-                className="mx-2">
+                className="mx-2 whitespace-nowrap">
                 #{tag.name}
               </span>
             ))}

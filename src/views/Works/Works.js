@@ -5,7 +5,7 @@ import TagsList from "./TagsList";
 import { useFetchWorksMutation, useFetchTagsMutation } from "../../redux/services/worksApi";
 import Loader from "../../components/Loader";
 
-export default function Works(){
+const Works = () => {
   const [works, setWorks] = useState([]);
   const [tags, setTags] = useState([]);
   const [fetchWorks, { isLoading: isFetchingWorks }] = useFetchWorksMutation();
@@ -30,8 +30,8 @@ export default function Works(){
     );
   }
 
-	return (
-		<>
+  return (
+    <>
       <h1 className="        
         uppercase
         font-bold
@@ -66,6 +66,8 @@ export default function Works(){
 
       <WorkList
         works={works} />
-		</>
-	);
-}
+    </>
+  );
+};
+
+export default Works;
