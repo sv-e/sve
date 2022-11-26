@@ -2,33 +2,7 @@ import Nav from "./Nav";
 import Social from "../components/Social";
 import Copyright from "../components/Copyright";
 
-import { useLayoutEffect, useRef } from "react";
-import { gsap } from "gsap";
-
 export default function MainLayout({children}){
-  const root = useRef();
-
-  useLayoutEffect(() => {
-    let ctx = gsap.context(() => {
-      // gsap
-      //   .to("h1", {
-      //     startAt: { y: -100, opacity: 0 },
-      //     y: 0,
-      //     duration: 1,
-      //     opacity: 1
-      //   });
-      // gsap
-      //   .to(".meta", {
-      //     startAt: { y: 100, opacity: 0 },
-      //     y: 0,
-      //     duration: 1,
-      //     opacity: 1
-      //   });
-    }, root);
-
-    return () => ctx.revert();
-  }, []);
-
   return (
     <>
       <Nav />
@@ -39,7 +13,6 @@ export default function MainLayout({children}){
         </div>        
       </div>
       <div
-        ref={root}
         className="
           w-screen
           overflow-hidden
