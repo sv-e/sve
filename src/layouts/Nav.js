@@ -6,22 +6,27 @@ import { APP_ROUTE } from "../utils/constants";
 import logo from "../assets/images/logo.svg";
 import Switch from "../components/Switch";
 
-export default function Nav(){
+export default function Nav({ navRef }, { ref }){
   return (
     <>      
-      <nav className="
-        bg-white
-        px-2
-        sm:px-4
-        py-3
-        fixed
-        top-0
-        left-0
-        right-0
-        dark:bg-black
-        z-50
-        landscape:bg-dark
-      ">
+      <nav
+        ref={navRef}
+        className="
+          bg-white
+          px-2
+          sm:px-4
+          py-3
+          fixed
+          top-0
+          left-0
+          right-0
+          dark:bg-black
+          z-50
+          landscape:bg-dark
+          max-lg:!transform-none
+          max-lg:!opacity-100
+          max-lg:!top-0
+        ">
         <div className="
           container
           flex

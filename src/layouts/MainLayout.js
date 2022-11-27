@@ -8,38 +8,49 @@ import { gsap } from "gsap";
 export default function MainLayout({children}){
   const root = useRef();
 
+  const navRef = useRef(null);
+  const copyrightRef = useRef(null);
+  const socialRef = useRef([]);
+
   useLayoutEffect(() => {
     let ctx = gsap.context(() => {
-      // gsap
-      //   .to("h1", {
-      //     startAt: { y: -100, opacity: 0 },
-      //     y: 0,
-      //     duration: 1,
-      //     opacity: 1
-      //   });
-      // gsap
-      //   .to(".meta", {
-      //     startAt: { y: 100, opacity: 0 },
-      //     y: 0,
-      //     duration: 1,
-      //     opacity: 1
-      //   });
+      gsap.from(navRef.current, 2, {
+        delay: 1.2,
+        opacity: 0,
+        top: "-100%",
+        ease: "power1.easeInOut"
+      });
+
+      gsap.from(copyrightRef.current, 2, {
+        delay: 1.7,
+        opacity: 0,
+        x: 20,
+        ease: "power1.easeInOut"
+      });
+
+      gsap.from(socialRef.current, 2, {
+        delay: 1.7,
+        opacity: 0,
+        x: -20,
+        ease: "power1.easeInOut"
+      });
     }, root);
 
     return () => ctx.revert();
   }, []);
 
   return (
-    <>
-      <Nav />
+    <div
+      ref={root}
+      className="min-h-screen">
+      <Nav navRef={navRef} />
       <div
         className="neo">
         <div className="neo-center">
           <div className="neo-waves"></div>
         </div>        
       </div>
-      <div
-        ref={root}
+      <div        
         className="
           w-screen
           overflow-hidden
@@ -59,9 +70,9 @@ export default function MainLayout({children}){
         ">
         {children}
 
-        <Social />
-        <Copyright />
+        <Social socialRef={socialRef} />
+        <Copyright copyrightRef={copyrightRef} />
       </div>      
-    </>
+    </div>
   );
 }
