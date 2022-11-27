@@ -23,6 +23,9 @@ export default function Nav({ navRef }, { ref }){
           dark:bg-black
           z-50
           landscape:bg-dark
+          max-lg:!transform-none
+          max-lg:!opacity-100
+          max-lg:!top-0
         ">
         <div className="
           container

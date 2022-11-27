@@ -23,8 +23,7 @@ const Home = () => {
         delay: 0.25,
         opacity: 0,
         y: 30,
-        ease: "power1.easeInOut",
-        immediateRender: !0
+        ease: "power1.easeInOut"
       });
 
       gsap.from(btn.current, 2, {
@@ -38,13 +37,12 @@ const Home = () => {
         delay: 0.75,
         opacity: 0,
         y: 30,
-        ease: "power1.easeInOut",
-        immediateRender: !0
+        ease: "power1.easeInOut"
       });
 
       anime.timeline({ loop: false }).add({
         targets: itemsRef.current,
-        translateY: [-180, 0],
+        // translateY: [-180, 0],
         scale: [0, 1],
         opacity: [0, 1],
         rotationX: 0,
@@ -82,7 +80,7 @@ const Home = () => {
           text-3xl
           lg:text-[5vh]
           leading-tight
-          flex
+          sm:flex
           items-center
           justify-center
           max-lg:!transform-none
@@ -99,7 +97,13 @@ const Home = () => {
               {word.split("").map((letter, i) => {
                 return (
                   <div
-                    className="inline-block origin-right ml-1"
+                    className="
+                      inline-block
+                      origin-right
+                      ml-1
+                      max-lg:!transform-none
+                      max-lg:!opacity-100
+                    "
                     key={i}
                     ref={(el) => {
                       if (el) itemsRef.current[index * word.length + i] = el;

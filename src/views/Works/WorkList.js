@@ -26,6 +26,7 @@ const WorkList = ({ works }) => {
         after:blur-2xl
         after:z-[-1]
         m-[2%]
+        min-h-[50vh]
         glass
       ">
       <div

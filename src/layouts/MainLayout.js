@@ -14,8 +14,8 @@ export default function MainLayout({children}){
 
   useLayoutEffect(() => {
     let ctx = gsap.context(() => {
-      gsap.from(navRef.current, 1, {
-        delay: 0.1,
+      gsap.from(navRef.current, 2, {
+        delay: 1.2,
         opacity: 0,
         top: "-100%",
         ease: "power1.easeInOut"

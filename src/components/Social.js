@@ -1,8 +1,5 @@
 import Icon from "./Icon";
 
-// import { useLayoutEffect, useRef } from "react";
-// import { gsap } from "gsap";
-
 const socialList = [
   {id: 1, link: "https://codepen.io/semenchenko/", icon: "codepen"},
   {id: 2, link: "https://github.com/lime7", icon: "github"},
@@ -13,23 +10,6 @@ const socialList = [
 ];
 
 const Social = ({ socialRef }, { ref }) => {
-  // const root = useRef();
-
-  // const itemsRef = useRef([]);
-
-  // useLayoutEffect(() => {
-  //   let ctx = gsap.context(() => {
-  //     gsap.from(itemsRef.current, 2, {
-  //       delay: 1.7,
-  //       opacity: 0,
-  //       x: -20,
-  //       ease: "power1.easeInOut"
-  //     }, 0.1);
-  //   }, root);
-
-  //   return () => ctx.revert();
-  // }, []);
-
   return (
     <ul
       className="
@@ -63,6 +43,8 @@ const Social = ({ socialRef }, { ref }) => {
               sm:ml-0
               sm:mt-5
               lg:mt-[4vh]
+              max-lg:!transform-none
+              max-lg:!opacity-100
             ">
             <a
               href={social.link}

@@ -8,7 +8,7 @@ import Success from "./Success";
 
 import Icon from "../../components/Icon";
 
-const ContactForm = ({ isHome }) => {
+const ContactForm = () => {
   const { formatMessage } = useIntl();
 
   const [showSuccess, setShowSuccess] = useState(false);
@@ -53,8 +53,7 @@ const ContactForm = ({ isHome }) => {
         validateOnChange
         initialValues={{ name: "", email: "", message: "" }}
         validationSchema={schema}
-        onSubmit={handleSubmit}
-      >
+        onSubmit={handleSubmit}>
         {({
           values,
           errors,
