@@ -1,8 +1,9 @@
 import { FormattedMessage } from "react-intl";
 
-const Copyright = () => {
+const Copyright = ({ copyrightRef }, { ref }) => {
   return (
     <span
+      ref={copyrightRef}
       className="
         block
         whitespace-nowrap
@@ -27,7 +28,7 @@ const Copyright = () => {
         text-[calc(0.625rem+0.25vh)]
         leading-[calc(0.75rem+1vh)]
       ">
-      <FormattedMessage id="copyright"  values={{ tag: new Date().getFullYear() }} />
+      <FormattedMessage id="copyright" values={{ tag: new Date().getFullYear() }} />
     </span>
   );
 };

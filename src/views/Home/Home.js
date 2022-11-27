@@ -22,24 +22,23 @@ const Home = () => {
       gsap.from(h1.current, 2, {
         delay: 0.25,
         opacity: 0,
-        y: 20,
-        ease: "expo.easeInOut",
+        y: 30,
+        ease: "power1.easeInOut",
         immediateRender: !0
       });
 
       gsap.from(btn.current, 2, {
         delay: 0.5,
         opacity: 0,
-        y: 20,
-        ease: "expo.easeInOut",
-        immediateRender: !0
+        y: 30,
+        ease: "power1.easeInOut"
       });
 
       gsap.from(meta.current, 2, {
         delay: 0.75,
         opacity: 0,
-        y: 20,
-        ease: "expo.easeInOut",
+        y: 30,
+        ease: "power1.easeInOut",
         immediateRender: !0
       });
 
@@ -100,10 +99,10 @@ const Home = () => {
               {word.split("").map((letter, i) => {
                 return (
                   <div
-                    className="inline-block origin-right"
+                    className="inline-block origin-right ml-1"
                     key={i}
                     ref={(el) => {
-                      itemsRef.current[i] = el;
+                      if (el) itemsRef.current[index * word.length + i] = el;
                     }}>
                     {letter}
                   </div>

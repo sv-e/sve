@@ -1,7 +1,7 @@
 import Icon from "./Icon";
 
-import { useLayoutEffect, useRef } from "react";
-import { gsap } from "gsap";
+// import { useLayoutEffect, useRef } from "react";
+// import { gsap } from "gsap";
 
 const socialList = [
   {id: 1, link: "https://codepen.io/semenchenko/", icon: "codepen"},
@@ -12,27 +12,26 @@ const socialList = [
   {id: 6, link: "https://www.buymeacoffee.com/lime27", icon: "bmc"}
 ];
 
-const Social = () => {
-  const root = useRef();
+const Social = ({ socialRef }, { ref }) => {
+  // const root = useRef();
 
-  const itemsRef = useRef([]);
+  // const itemsRef = useRef([]);
 
-  useLayoutEffect(() => {
-    let ctx = gsap.context(() => {
-      gsap.from(itemsRef.current, 2, {
-        delay: 2.7,
-        opacity: 0,
-        y: 20,
-        ease: "power3.easeInOut"
-      }, 0.1);
-    }, root);
+  // useLayoutEffect(() => {
+  //   let ctx = gsap.context(() => {
+  //     gsap.from(itemsRef.current, 2, {
+  //       delay: 1.7,
+  //       opacity: 0,
+  //       x: -20,
+  //       ease: "power1.easeInOut"
+  //     }, 0.1);
+  //   }, root);
 
-    return () => ctx.revert();
-  }, []);
+  //   return () => ctx.revert();
+  // }, []);
 
   return (
     <ul
-      ref={root}
       className="
         flex
         sm:flex-col
@@ -57,7 +56,7 @@ const Social = () => {
           <li
             key={index}
             ref={(el) => {
-              itemsRef.current[index] = el;
+              socialRef.current[index] = el;
             }}
             className="
               ml-10
