@@ -10,6 +10,11 @@ const Copyright = ({ copyrightRef }, { ref }) => {
         sm:top-0
         sm:bottom-0
         sm:right-0
+        sm:w-20
+        md:w-24
+        lg:w-28
+        pointer-events-none
+        will-change-transform
         max-lg:!transform-none
         max-lg:!opacity-100
       ">

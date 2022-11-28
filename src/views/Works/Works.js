@@ -80,6 +80,7 @@ const Works = () => {
           text-3xl
           lg:text-[5vh]
           leading-tight
+          will-change-transform
           max-lg:!transform-none
           max-lg:!opacity-100
         ">

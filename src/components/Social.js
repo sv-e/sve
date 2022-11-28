@@ -43,6 +43,7 @@ const Social = ({ socialRef }, { ref }) => {
               sm:ml-0
               sm:mt-5
               lg:mt-[4vh]
+              will-change-transform
               max-lg:!transform-none
               max-lg:!opacity-100
             ">
