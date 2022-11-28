@@ -22,7 +22,6 @@ export default function Nav({ navRef }, { ref }){
           right-0
           dark:bg-black
           z-50
-          landscape:bg-dark
           max-lg:!transform-none
           max-lg:!opacity-100
           max-lg:!top-0

@@ -122,13 +122,13 @@
 // Button Berry
 @mixin berry {
   color: $berry-color;
-  background: $berry-bg;
-  background-size: 600%;
+  background: $berry-bg;  
   animation: BerryAnimation 17s linear infinite;
 }
 
 .berry {
   @include berry;
+  background-size: 500%;
 
   @apply transition duration-200 ease-linear select-none; 
 

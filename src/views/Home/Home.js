@@ -83,6 +83,7 @@ const Home = () => {
           sm:flex
           items-center
           justify-center
+          will-change-transform
           max-lg:!transform-none
           max-lg:!opacity-100
         ">
@@ -120,7 +121,7 @@ const Home = () => {
       <div
         ref={btn}
         className="
-          my-4
+          mb-4
           sm:my-5
           md:my-5
           lg:m-auto
