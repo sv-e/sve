@@ -5,7 +5,6 @@ const socialList = [
   {id: 2, link: "https://github.com/lime7", icon: "github"},
   {id: 3, link: "https://stackblitz.com/@lime7", icon: "stackblitz"},
   {id: 4, link: "https://stackexchange.com/users/8595873/hamster", icon: "so"},
-  {id: 5, link: "https://www.linkedin.com/in/elena-s/", icon: "linkedin"},
   {id: 6, link: "https://www.buymeacoffee.com/lime27", icon: "bmc"}
 ];
 
