@@ -42,7 +42,7 @@ export default function App() {
 
   const isProdDomain = useMemo(() => {
     return (
-      window.location.href.includes("herokuapp.com")
+      window.location.href.includes("vercel.app")
     );
   }, [window.location.href]);
 
