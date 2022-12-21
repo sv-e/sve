@@ -42,7 +42,7 @@ export default function App() {
 
   const isProdDomain = useMemo(() => {
     return (
-      window.location.href.includes("vercel.app")
+      window.location.href.includes("sv-e.vercel.app")
     );
   }, [window.location.href]);
 
