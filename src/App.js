@@ -1,5 +1,5 @@
 import "./App.scss";
-import { useEffect, useMemo } from "react";
+import { useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
 // import { HashRouter } from "react-router-dom";
 import { BrowserRouter } from "react-router-dom";
@@ -40,24 +40,22 @@ export default function App() {
 
   const locale = info.countryCode === "ru" ? "ru" : "en";
 
-  const isProdDomain = useMemo(() => {
-    return (
-      window.location.href.includes("vercel") ||
-      window.location.href.includes("vercel.app") ||
-      window.location.href.includes("sv-e.vercel.app") ||
-      window.location.href.includes("localhost")
-    );
-  }, [window.location.href]);
+  // const isProdDomain = useMemo(() => {
+  //   return (
+  //     window.location.href.includes("vercel") ||
+  //     window.location.href.includes("vercel.app") ||
+  //     window.location.href.includes("sv-e.vercel.app") ||
+  //     window.location.href.includes("localhost")
+  //   );
+  // }, [window.location.href]);
 
   useEffect(() => {
-    if (isProdDomain) {
-      ReactGA.initialize("G-460PGEB7KD");
-      ReactGA.send("pageview");
-      TagManager.initialize({
-        gtmId: "GT-NN6CCRB"
-      });
-    }
-  }, [isProdDomain]);
+    ReactGA.initialize("G-460PGEB7KD");
+    ReactGA.send("pageview");
+    TagManager.initialize({
+      gtmId: "GT-NN6CCRB"
+    });
+  }, []);
 
   if (isLoading) {
     return (
