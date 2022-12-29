@@ -38,7 +38,8 @@ export default function App() {
     fetchData();
   }, []);
 
-  const locale = info.countryCode === "ru" ? "ru" : "en";
+  // const locale = info.countryCode === "ru" ? "ru" : "en";
+  const locale = "en";
 
   // const isProdDomain = useMemo(() => {
   //   return (
