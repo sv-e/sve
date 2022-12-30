@@ -1,6 +1,6 @@
 import "./App.scss";
 import { useEffect } from "react";
-import { useSelector, useDispatch } from "react-redux";
+import { useDispatch } from "react-redux";
 // import { HashRouter } from "react-router-dom";
 import { BrowserRouter } from "react-router-dom";
 import { MainRoutes } from "./routes";
