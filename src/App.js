@@ -26,7 +26,7 @@ export default function App() {
 
   const [getCountryCode, { isLoading: isGetCountryCodeLoading }] = useGetCountryCodeMutation();
 
-  const info = useSelector((state) => state.info);
+  // const info = useSelector((state) => state.info);
 
   const isLoading = isGetCountryCodeLoading;
 
