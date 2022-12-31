@@ -1,6 +1,6 @@
 import "./App.scss";
 import { useEffect } from "react";
-import { useDispatch } from "react-redux";
+import { useSelector, useDispatch } from "react-redux";
 // import { HashRouter } from "react-router-dom";
 import { BrowserRouter } from "react-router-dom";
 import { MainRoutes } from "./routes";
@@ -26,7 +26,7 @@ export default function App() {
 
   const [getCountryCode, { isLoading: isGetCountryCodeLoading }] = useGetCountryCodeMutation();
 
-  // const info = useSelector((state) => state.info);
+  const info = useSelector((state) => state.info);
 
   const isLoading = isGetCountryCodeLoading;
 
@@ -38,8 +38,8 @@ export default function App() {
     fetchData();
   }, []);
 
-  // const locale = info.countryCode === "ru" ? "ru" : "en";
-  const locale = "en";
+  const locale = info.countryCode === "ru" ? "ru" : "en";
+  // const locale = info.countryCode === "de" ? "ru" : "en";
 
   // const isProdDomain = useMemo(() => {
   //   return (

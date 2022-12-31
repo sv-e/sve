@@ -24,7 +24,10 @@ const en = {
     design: "Design",
     preview: "Preview",
     back: "Back",
-    top: "Top"
+    top: "Top",
+    name: "Name",
+    email: "E-mail",
+    yourMessage: "Your message ..."
   }
 };
 

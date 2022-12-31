@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 
 const WorkItem = ({ work }) => {
   const info = useSelector((state) => state.info);
+  const locale = info.countryCode;
 
   return (
     <div
@@ -12,8 +13,8 @@ const WorkItem = ({ work }) => {
         dark:bg-white
         max-h-[18.75rem]
         ${work.size === 2 ? "col-span-2" : ""}
-        ${info.countryCode === "ru" ? "" : ""}
-        ${info.countryCode === "ru" || work.status ? "" : "hidden"}
+        ${locale === "ru" ? "" : ""}
+        ${locale === "ru" || work.status ? "" : "hidden"}
       `}>
       <span
         className="

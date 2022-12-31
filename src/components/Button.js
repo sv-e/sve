@@ -1,5 +1,5 @@
 import { FormattedMessage } from "react-intl";
-import CV from "../media/CV-2022.pdf";
+import CV from "../media/CV-2023.pdf";
 import Icon from "./Icon";
 
 const Button = () => {

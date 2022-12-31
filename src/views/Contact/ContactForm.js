@@ -84,7 +84,7 @@ const ContactForm = () => {
                     type="text"
                     name="name"
                     id="name"
-                    placeholder="Name"
+                    placeholder={formatMessage({ id: "name" })}
                     className="
                       appearance-none
                       text-sm
@@ -140,7 +140,7 @@ const ContactForm = () => {
                       type="text"
                       name="email"
                       id="email"
-                      placeholder="E-mail"
+                      placeholder={formatMessage({ id: "email" })}
                       className="
                         appearance-none
                         text-sm
@@ -203,7 +203,7 @@ const ContactForm = () => {
                     rows="2"
                     name="message"
                     id="message"
-                    placeholder="Your message..."
+                    placeholder={formatMessage({ id: "yourMessage" })}
                     className="
                       appearance-none
                       text-sm
