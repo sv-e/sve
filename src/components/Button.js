@@ -1,8 +1,17 @@
 import { FormattedMessage } from "react-intl";
+import { useSelector } from "react-redux";
 import CV from "../media/CV-2023.pdf";
+import CVru from "../media/CV-2023-ru.pdf";
 import Icon from "./Icon";
 
 const Button = () => {
+  const info = useSelector((state) => state.info);
+
+  // const locale = info.countryCode === "ru" ? "ru" : "en";
+  const locale = info.countryCode === "de" ? "ru" : "en";
+
+  const resume = locale === "ru" ? CVru : CV;
+
   return (
     <button
       className="
@@ -31,7 +40,7 @@ const Button = () => {
         before:h-full
         md:hover:translate-y-1
       "
-      onClick={() => window.open(CV)}
+      onClick={() => window.open(resume)}
       target="_blank"
       rel="noopener noreferrer"
       aria-label="CV">

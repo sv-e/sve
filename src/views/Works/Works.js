@@ -51,13 +51,13 @@ const Works = () => {
 
   const isFetching = isFetchingWorks || isFetchingTags;
 
-  console.log(isFetching);
+  // console.log(isFetching);
 
-  // if (isFetching) {
-  //   return (
-  //     <Loader />
-  //   );
-  // }
+  if (isFetching) {
+    return (
+      <Loader />
+    );
+  }
 
   return (
     <div
