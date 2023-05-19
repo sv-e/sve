@@ -149,6 +149,8 @@ const Home = () => {
           <FormattedMessage id="wellcomeGo" />
         </p>
       </div>
+
+
     </div>
   );
 };

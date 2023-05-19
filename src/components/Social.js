@@ -1,15 +1,19 @@
 import Icon from "./Icon";
+import { useSelector } from "react-redux";
 
 const socialList = [
   {id: 1, link: "https://codepen.io/semenchenko/", icon: "codepen"},
   {id: 2, link: "https://github.com/lime7", icon: "github"},
   {id: 3, link: "https://stackblitz.com/@lime7", icon: "stackblitz"},
   {id: 4, link: "https://stackexchange.com/users/8595873/hamster", icon: "so"},
-  // {id: 5, link: "www.linkedin.com/in/s-elena", icon: "linkedin"},
+  {id: 5, link: "https://www.linkedin.com/in/semen4enkov/", icon: "linkedin"},
   {id: 6, link: "https://www.buymeacoffee.com/lime27", icon: "bmc"}
 ];
 
 const Social = ({ socialRef }, { ref }) => {
+  const info = useSelector((state) => state.info);
+  const locale = info.countryCode;
+
   return (
     <ul
       className="
@@ -38,7 +42,7 @@ const Social = ({ socialRef }, { ref }) => {
             ref={(el) => {
               socialRef.current[index] = el;
             }}
-            className="
+            className={`
               ml-10
               sm:ml-0
               sm:mt-5
@@ -46,28 +50,29 @@ const Social = ({ socialRef }, { ref }) => {
               will-change-transform
               max-lg:!transform-none
               max-lg:!opacity-100
-            ">
-            <a
-              href={social.link}
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Social link"
-              className="
-                text-sev-dark
-                dark:text-white
-                transition
-                duration-300
-                ease-linear
-              ">
-              <Icon
-                icon={social.icon}
+              ${locale === "ru" && social.id === 5 ? "hidden" : ""}
+            `}>            
+              <a
+                href={social.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Social link"
                 className="
-                  w-4
-                  h-4
-                  lg:w-[calc(0.75rem+0.5vh)]
-                  lg:h-[calc(0.75rem+0.5vh)]
-                " />
-            </a>
+                  text-sev-dark
+                  dark:text-white
+                  transition
+                  duration-300
+                  ease-linear
+                ">
+                <Icon
+                  icon={social.icon}
+                  className="
+                    w-4
+                    h-4
+                    lg:w-[calc(0.75rem+0.5vh)]
+                    lg:h-[calc(0.75rem+0.5vh)]
+                  " />
+              </a>
           </li>
         );
       })}
