@@ -132,69 +132,6 @@
       "status": true
     },
     {      
-      "id": 7,
-      "size": 1,
-      "name": "Ural Oxigen",
-      "description": "Website",
-      "image_prev": "1",
-      "images": [
-        {"id": 1, "src": "1"}, 
-        {"id": 2, "src": "2"}
-      ],
-      "tags":[
-        {"id" : 1, "name": "Bootstrap 4"},
-        {"id" : 2, "name": "HTML5"},
-        {"id" : 3, "name": "CSS3"},
-        {"id" : 4, "name": "JQuery"}
-      ],
-      "links":[
-        {"id" : 1, "name": "web", "url": "http://semen4enko.esy.es/UralOxigen/"}
-      ],
-      "status": false
-    },
-    {      
-      "id": 8,
-      "size": 1,
-      "name": "Akva",
-      "description": "Website",
-      "image_prev": "1",
-      "images": [
-        {"id": 1, "src": "1"}, 
-        {"id": 2, "src": "2"}
-      ],
-      "tags":[
-        {"id" : 1, "name": "Bootstrap 4"},
-        {"id" : 2, "name": "HTML5"},
-        {"id" : 3, "name": "CSS3"},
-        {"id" : 4, "name": "JQuery"}
-      ],
-      "links":[
-        {"id" : 1, "name": "web", "url": "http://semen4enko.esy.es/akva/"}
-      ],
-      "status": false
-    },
-    {      
-      "id": 9,
-      "size": 1,
-      "name": "StudyCube",
-      "description": "Website",
-      "image_prev": "1",
-      "images": [
-        {"id": 1, "src": "1"}, 
-        {"id": 2, "src": "2"}
-      ],
-      "tags":[
-        {"id" : 1, "name": "Bootstrap 4"},
-        {"id" : 2, "name": "HTML5"},
-        {"id" : 3, "name": "CSS3"},
-        {"id" : 4, "name": "JQuery"}
-      ],
-      "links":[
-        {"id" : 1, "name": "web", "url": "http://semen4enko.esy.es/studycube/"}
-      ],
-      "status": false
-    },
-    {      
       "id": 10,
       "size": 1,
       "name": "StartApp",
@@ -217,27 +154,6 @@
       "status": true
     },
     {      
-      "id": 11,
-      "size": 1,
-      "name": "Energy",
-      "description": "Website",
-      "image_prev": "1",
-      "images": [
-        {"id": 1, "src": "1"}, 
-        {"id": 2, "src": "2"}
-      ],
-      "tags":[
-        {"id" : 1, "name": "Bootstrap 4"},
-        {"id" : 2, "name": "HTML5"},
-        {"id" : 3, "name": "CSS3"},
-        {"id" : 4, "name": "JQuery"}
-      ],
-      "links":[
-        {"id" : 1, "name": "web", "url": "http://semen4enko.esy.es/energy/"}
-      ],
-      "status": false
-    },
-    {      
       "id": 12,
       "size": 1,
       "name": "Ficus",
@@ -255,50 +171,6 @@
         {"id" : 2, "name": "figma", "url": "https://www.figma.com/proto/n7MGyUHyv4CCpuFqeXsxIC/Fucus-design?node-id=1%3A2&scaling=scale-down-width&page-id=0%3A1&starting-point-node-id=1%3A2&show-proto-sidebar=1&hide-ui=1"}
       ],
       "status": true
-    },
-    {      
-      "id": 13,
-      "size": 1,
-      "name": "Trans-si",
-      "description": "Landing page",
-      "image_prev": "1",
-      "images": [
-        {"id": 1, "src": "1"}, 
-        {"id": 2, "src": "2"},
-        {"id": 3, "src": "3"}
-      ],
-      "tags":[
-        {"id" : 1, "name": "Bootstrap 4"},
-        {"id" : 2, "name": "HTML5"},
-        {"id" : 3, "name": "CSS3"},
-        {"id" : 4, "name": "JQuery"}
-      ],
-      "links":[
-        {"id" : 1, "name": "web", "url": "http://semen4enko.esy.es/trans-si/"}
-      ],
-      "status": false
-    },
-    {      
-      "id": 14,
-      "size": 1,
-      "name": "Heliport",
-      "description": "Website",
-      "image_prev": "1",
-      "images": [
-        {"id": 1, "src": "1"}, 
-        {"id": 2, "src": "2"}
-      ],
-      "tags":[
-        {"id" : 1, "name": "Bootstrap 4"},
-        {"id" : 2, "name": "HTML5"},
-        {"id" : 3, "name": "CSS3"},
-        {"id" : 4, "name": "svg"},
-        {"id" : 5, "name": "JQuery"}
-      ],
-      "links":[
-        {"id" : 1, "name": "web", "url": "http://semen4enko.esy.es/heliport/"}
-      ],
-      "status": false
     }
   ],
   "tags": [

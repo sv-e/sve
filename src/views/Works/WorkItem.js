@@ -13,8 +13,6 @@ const WorkItem = ({ work }) => {
         dark:bg-white
         max-h-[18.75rem]
         ${work.size === 2 ? "col-span-2" : ""}
-        ${locale === "ru" ? "" : ""}
-        ${locale === "ru" || work.status ? "" : "hidden"}
       `}>
       <span
         className="
