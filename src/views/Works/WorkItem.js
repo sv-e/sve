@@ -2,9 +2,6 @@ import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 
 const WorkItem = ({ work }) => {
-  const info = useSelector((state) => state.info);
-  const locale = info.countryCode;
-
   return (
     <div
       className={`
